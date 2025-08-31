@@ -1,0 +1,71 @@
+Id	Empleado	Categoria	Sexo	Hijos	Formación Academica	Oficina	Condición	SUELDO BASICO
+C-001	Alison Quintana Bedon	B	F	0	Universitario	Sistemas	Estable	S/.800,00
+C-002	Arturo Mena Rojas	A	M	0	Técnico	RRHH	Estable	S/.820,00
+C-003	Bryam Alva Diaz	B	M	1	Bachiller	Administración	Contratado	S/.900,00
+C-004	Claudia Arce Vega	A	F	1	Secundaria	Recepción	Estable	S/.1 000,00
+C-005	Daniel Vega Vela	C	M	0	Universitario	Contabilidad	Estable	S/.1 200,00
+C-006	Davis Quispe Tijuan	A	M	0	Universitario	Caja	Estable	S/.800,00
+C-007	Enrrique Ascoy Ore	B	M	0	Técnico	Contabilidad	Estable	S/.750,00
+C-008	Felipe Castillo Durand	A	M	1	Técnico	Caja	Estable	S/.800,00
+C-009	Gisella Calderon Garcia	C	F	1	Técnico	Recepción	Contratado	S/.650,00
+C-010	Gisella Villanueva Lopez	A	F	2	Universitario	Administración	Contratado	S/.700,00
+C-011	Guadalupe Davila Quiroz	A	F	0	Bachiller	Sistemas	Contratado	S/.800,00
+C-012	Jimmy Rodas Jaimes	C	M	0	Doctorado	Sistemas	Estable	S/.850,00
+C-013	Jose Segovia Castillo	B	M	3	Técnico	Sistemas	Contratado	S/.700,00
+C-014	Juan Romero Vega	A	M	3	Universitario	Caja	Estable	S/.600,00
+C-015	Juan Saldaña Guerrero	C	M	2	Universitario	Sistemas	Contratado	S/.500,00
+C-016	Julio Tello Diaz	C	M	1	Doctorado	Recepción	Estable	S/.850,00
+C-017	Lariza Jauregui Alarcon	A	F	0	Universitario	Administración	Estable	S/.900,00
+C-018	Marlene Zamudio Gomez	B	F	3	Técnico	Contabilidad	Estable	S/.1 200,00
+C-019	Melisa Rivera Robles	B	F	0	Técnico	Contabilidad	Estable	S/.1 200,00
+C-020	Miguel Vela Zamora	B	M	0	Bachiller	Cobranzas	Contratado	S/.1 500,00
+C-021	Moises Zamora Rodas	C	M	0	Bachiller	Finanzas	Contratado	S/.900,00
+C-022	Monica Villanueva Diaz	C	F	0	Bachiller	Cobranzas	Estable	S/.1 600,00
+C-023	Nicole Zamudio Rojas	A	F	2	Técnico	Sistemas	Estable	S/.800,00
+C-024	Pedro Rivas Carlo	A	M	3	Universitario	Administración	Estable	S/.850,00
+C-025	Roxana Saldaña Argume	A	F	1	Universitario	Contabilidad	Estable	S/.900,00
+C-026	Sebastian Chanca Castillo	C	M	1	Universitario	Seguridad	Estable	S/.850,00
+C-027	Victor Reyna Garcia	C	M	0	Bachiller	Seguridad	Contratado	S/.700,00
+C-028	Eduardo Caldas Toledo	B	M	1	Doctorado	Sistemas	Estable	S/.600,00
+C-029	Roberto Diaz Castillo	B	M	1	Doctorado	Contabilidad	Estable	S/.500,00
+C-030	Julio Rodriguez Argume	C	M	1	Bachiller	Administración	Estable	S/.850,00
+C-031	Guiselle Sifuentes Vasquez	A	F	2	Técnico	Sistemas	Contratado	S/.900,00
+C-032	Rocio Huansi Ore	A	F	0	Técnico	Seguridad	Contratado	S/.1 200,00
+C-033	Luis Alvarez Zambrano	B	M	0	Técnico	Recepción	Contratado	S/.1 200,00
+C-034	Karen Sanchez Urquizo	B	F	3	Universitario	Contabilidad	Estable	S/.1 500,00
+C-035	Sergio Gomez Carpio	C	M	2	Universitario	Administración	Estable	S/.900,00
+C-036	Isaac Roldan Castilla	B	M	4	Universitario	Recepción	Estable	S/.1 600,00
+C-037	Carlos Surco Mora	B	M	1	Universitario	Contabilidad	Contratado	S/.800,00
+C-038	Jaime Canchuricra Vera	A	M	1	Universitario	Caja	Contratado	S/.850,00
+C-039	Romy Flores Paucar	A	F	4	Doctorado	Contabilidad	Estable	S/.900,00
+C-040	Luis Mendoza Perez	C	M	0	Doctorado	Caja	Estable	S/.850,00
+C-041	Carlos Ruiz Calderon	B	M	1	Universitario	Recepción	Estable	S/.700,00
+C-042	Nancy Crisostomo Pajuelo	C	F	1	Universitario	Administración	Estable	S/.850,00
+C-043	Erick Fuentes Vasquez	C	M	2	Universitario	Sistemas	Estable	S/.650,00
+C-044	Nikole Condori Marquina	B	F	2	Técnico	Sistemas	Contratado	S/.1 200,00
+C-045	Cesar Machagua Tello	A	M	1	Técnico	Sistemas	Contratado	S/.1 300,00
+C-046	Mery Valderrama Gomez	A	F	0	Doctorado	Caja	Contratado	S/.700,00
+C-047	Moises Medin Rivera	A	M	1	Universitario	Sistemas	Contratado	S/.750,00
+C-048	Maria Zamudio Neyra	A	F	0	Técnico	Recepción	Estable	S/.900,00
+C-049	Javier Rivera Moran	B	M	0	Técnico	Administración	Contratado	S/.1 000,00
+C-050	Ricardo  Aguirre Rosado	A	M	1	Técnico	Contabilidad	Estable	S/.800,00
+C-051	Ruben  Alcantara Diaz	A	M	1	Doctorado	Contabilidad	Contratado	S/.500,00
+C-052	Walter Alcantara Alarcon	A	M	1	Bachiller	Cobranzas	Estable	S/.550,00
+C-053	Miguel Anchiraica Marco	A	M	0	Bachiller	Finanzas	Estable	S/.600,00
+C-054	Lucia Castillejo Garcia	A	F	0	Bachiller	Sistemas	Estable	S/.1 300,00
+C-055	Antonio  Chavez Lopez	B	M	2	Doctorado	Sistemas	Contratado	S/.1 500,00
+C-056	Ivan Flores Calderon	A	M	3	Técnico	Caja	Contratado	S/.1 800,00
+C-057	Maria  Gomez Pizarro	C	F	3	Técnico	Sistemas	Estable	S/.1 900,00
+C-058	Elvis Gutierres Crespo	C	M	2	Técnico	Recepción	Estable	S/.2 000,00
+C-059	Antonio Medina General	A	M	1	Técnico	Administración	Estable	S/.2 300,00
+C-060	Agustina Muñoz Amado	A	F	1	Técnico	Contabilidad	Contratado	S/.850,00
+C-061	Paul Palacios Rivera	A	M	0	Técnico	Contabilidad	Contratado	S/.900,00
+C-062	Petronia Rosado Araujo	C	F	1	Doctorado	Cobranzas	Contratado	S/.950,00
+C-063	Juanita Rosales Bedon	C	F	1	Bachiller	Recepción	Estable	S/.1 000,00
+C-064	Victor Ruiz Merma	B	M	0	Bachiller	Sistemas	Estable	S/.850,00
+C-065	Fidel Solis Castro	B	M	0	Universitario	Administración	Estable	S/.750,00
+C-066	Carlos Vega Zanabria	B	M	0	Universitario	Sistemas	Contratado	S/.800,00
+C-067	Isabel Vera Campos	B	F	2	Universitario	Administración	Contratado	S/.800,00
+C-068	Sonia Villegas Gamarra	C	F	3	Técnico	Contabilidad	Estable	S/.1 200,00
+C-069	Juan Yenque Zeballos	C	M	0	Técnico	Sistemas	Estable	S/.1 300,00
+C-070	Brenda Yapias Arevalo	A	F	0	Universitario	Contabilidad	Estable	S/.950,00
