@@ -246,17 +246,17 @@ Estos métodos te permiten insertar filas y columnas de manera rápida y eficien
 
 #### Datos aceptados
 
-Excel puede ingresar:
+Haciendo **doble clic**, usando `F2` o con **la barra de formulas** Excel permite ingresar:
 
 - Textos
 - Valores numéricos: Se alinean a la derecha
 - Fórmulas
-- Fechas
-- Horas
+- Fechas: `25/11/1996`
+- Horas: `07:30`
 
-Los apóstrofes detienen las fórmulas.
+> Nota: Los apóstrofes detienen las fórmulas. `'=A6/$B$3` Puedes obtener este carácter usanto `Alt + 39`.
 
-En Excel, un apóstrofe (`'`) al principio de una celda convierte todo el contenido en texto, lo que efectivamente **detiene** la ejecución de cualquier fórmula.
+En Excel, un apóstrofe (`'`) al principio de una celda convierte todo el contenido en texto, lo que efectivamente **detiene** la ejecución de cualquier fórmula. 
 
 Esto es útil si quieres mostrar una fórmula como texto sin que Excel la ejecute o para mostrar números largos que Excel podría interpretar de otra manera (notación científica).
   
