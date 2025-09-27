@@ -128,13 +128,15 @@ La **sección de hojas** en la parte inferior izquierda de Excel muestra las pes
 ![Sheets](https://i.postimg.cc/GhJV0rLH/1-4-sheets.png)
 
 - **Agregar una hoja:** Haz clic en el botón de **"Nueva hoja"** (generalmente un ícono con un signo de suma).
-- **Cambiar nombre:** Haz clic derecho en una pestaña y selecciona **"Renombrar"**.
+- **Cambiar nombre:** Haz clic derecho en una pestaña y selecciona **"Renombrar"** o haz doble clic sobre la hoja.
 - **Eliminar una hoja:** Haz clic derecho en la pestaña y selecciona **"Eliminar"**.
 - **Mover o copiar:** Arrastra la pestaña para cambiar su orden o haz clic derecho y selecciona **"Mover o copiar"** para reordenar o duplicar hojas.
 
 Estas pestañas permiten gestionar y organizar múltiples hojas dentro de un solo libro de Excel.
 
 ![Sheets options](https://i.postimg.cc/MZyqGCZ8/1-4-sheets-options.png)
+
+> Nota: También puedes agregar una hoja si seleccionas `insert/Worksheet`
 
 Usos Comunes
 
@@ -144,14 +146,14 @@ Usos Comunes
 
 ![Sheets colors](https://i.postimg.cc/cH7xP2rZ/1-4-sheets-colors.png)
 
-- **Crear una copia**
+- **Crear una copia:** Selecciona la hoja a copiar, clic derecho, Mover o Copiar y ✅ Crear una copia.
 
 ![Sheets copy](https://i.postimg.cc/8csYLr83/1-4-sheets-copy.png)
 
 ![Sheets create a copy](https://i.postimg.cc/3wm0JLdf/1-4-sheets-create-a-copy.png)
 
 - **Ocultar una hoja:** Clic derecho en la hoja a ocultar y seleccionar **Hide** u ocultar.
-- **Mostrar una hoja:** Clic derecho en cualquier hoja y seleccionar **Unhide** u mostrar.
+- **Mostrar una hoja:** Clic derecho en cualquier hoja y seleccionar **Unhide** o mostrar.
 
 ![](https://i.postimg.cc/T3qXdgTq/1-4-sheets-unhide.png)
 
@@ -191,9 +193,15 @@ Estos controles ayudan a personalizar la visualización y preparar documentos pa
 
 ![View controls](https://i.postimg.cc/JhMydrdP/1-3-view-controls.png)
 
-#### Operaciones Básicas
+### Operaciones Básicas
 
-##### Añadir filas y columnas
+#### Crear un nuevo libro
+
+1. `Archivo/Inicio/Libro en blanco`
+2. `Archivo/Nuevo/Libro en blanco`
+3. 📄 Nuevo (Ctrl + U)
+
+#### Añadir filas y columnas
 
 **Usando la interfaz:**
 
@@ -221,7 +229,7 @@ Estos controles ayudan a personalizar la visualización y preparar documentos pa
 
 Estos métodos te permiten insertar filas y columnas de manera rápida y eficiente en Excel.
 
-##### Insertar / Desplazar
+#### Insertar / Desplazar
 
 1. **Selecciona las celdas donde deseas insertar nuevas celdas.**
 2. **Haz clic derecho** en la selección y elige **"Insertar"**.
@@ -443,8 +451,6 @@ X V fx
 
 alt 126 ~
 
-
-
 ## Atajos de teclado Excel en Ingles
 
 Estos son algunos de los atajos de teclado más útiles y comunes en Excel:
@@ -511,3 +517,9 @@ Estos son algunos de los atajos de teclado más útiles y comunes en Excel:
 
 Estos atajos pueden mejorar significativamente tu productividad en Excel, permitiéndote realizar tareas comunes más rápidamente. Ten en cuenta que estos atajos pueden variar si usas la versión en Español de Excel.
 
+
+## Colors
+
+#090b10
+
+#4f46e5
