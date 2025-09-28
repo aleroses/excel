@@ -591,8 +591,11 @@ Luego de arrastrar queda así, toda la columna `Importe` tiene la misma fórmula
 Las referencias absolutas en Excel fijan una celda (o rango) específica para que no cambie su posición, incluso cuando se copia o se arrastra una fórmula a otras celdas. Se identifican porque el signo de dólar `($)` se coloca antes de la columna y de la fila que se desea inmovilizar, como en `$A$1`. Esto asegura que la fórmula siempre haga referencia a la misma celda, sin importar dónde se encuentre el cálculo. 
 
 > Nota: Puedes presionar la tecla `F4` para agregar o eliminar automáticamente los signos de dólar a una referencia de celda mientras editas una fórmula.
+
 > Si presionas `F4` 1 vez obtienes: `=+D7*$B$4` Fija la celda, tanto la columna como la fila, logrando que al arrastrar siempre se mantenga en la celda `B4`.
+
 > Si presionas `F4` 2 vez obtienes: `=+D7*B$4` Fija solo la fila, logrando que siempre se mantenga en la fila `4`.
+
 > Si presionas `F4` 3 vez obtienes: `=+D7*$B4` Fija solo la columna, logrando que siempre se mantenga en la columna `B`.
 
 ![Absolute references](https://i.postimg.cc/Bn6smV6x/1-16-absolute-references.png)
