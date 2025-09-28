@@ -606,6 +606,46 @@ Luego de arrastrar queda así, toda la columna `Margen Ganancia` tiene fijada la
 
 Las referencias mixtas en Excel fijan solo la columna o solo la fila de una celda, mientras que la otra parte de la referencia permanece relativa y cambia al arrastrar la fórmula. Se diferencian de las referencias relativas (que cambian por completo al copiar) y las absolutas (que se mantienen fijas en su totalidad). Un ejemplo común es `$A1` (columna fija, fila relativa) o `A$1` (columna relativa, fila fija).
 
+En el siguiente ejemplo, en primera instancia queremos multiplicar `$ 1,200.00 * 16%`, luego al arrastrar hacia abajo necesitamos que los valores `$ 1,500.00` y `$ 1,800.00` también sean multiplicados por `16%` para lo cual, podríamos pensar que fijando `$B$7` se resuelve, pero no, ya que después necesitamos arrastrar la fórmula hacia **Producto 2** y **Producto 3** tomando los valores `7%` y `4%`. Este caso en específico se resuelve usando `B$7` que nos permitirá fijar la fila `7` pero no las columnas.
+
+Fijamos solo la fila `7` de no hacerlo al arrastrar hacia bajo esta cambiará a `8, 9 y 10` lo cual no queremos. 
+
+![Mixed references](https://i.postimg.cc/05CyZ3xv/1-16-mixed-references.png)
+
+Arrastramos hacia abajo:
+
+![Mixed references result1](https://i.postimg.cc/x8sYQwTH/1-16-mixed-references-result1.png)
+
+Arrastramos hacia la derecha:
+
+![Mixed references result2](https://i.postimg.cc/C1SVqhRq/1-16-mixed-references-result2.png)
+
+Nuevamente arrastramos hacia abajo:
+
+![Mixed references result3](https://i.postimg.cc/Sx90128P/1-16-mixed-references-result3.png)
+
+**Ejemplo extra:**
+
+Creemos una tabla de multiplicar.
+
+![Multiplication table](https://i.postimg.cc/YqnnNpss/1-16-mixed-references-multiplication-table.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
