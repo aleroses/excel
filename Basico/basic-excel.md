@@ -444,38 +444,31 @@ Para **cortar** en Excel:
 
 #### Serie de relleno
 
-**2. Relleno de serie**
+El **relleno de serie** permite **crear secuencias automáticas** (números, fechas, días de la semana, meses, etc.).
 
-- Te permite **crear secuencias automáticas** (números, fechas, días de la semana, meses, etc.).
-    
-- Ejemplo: escribes “1” y “2”, seleccionas ambas, y Excel completa hasta “10”.
-    
-- **Cómo hacerlo:**
-    
-    1. Escribe los primeros valores de la serie.
-        
-    2. Selecciona esas celdas.
-        
-    3. Usa el controlador de relleno (esquina inferior derecha de la selección) y arrástralo.
-        
+Ejemplo: escribes “1” y “2”, seleccionas ambas, y Excel completa hasta “10”.
 
-**3. Controlador de relleno**
+**Cómo hacerlo:**
 
-- Es el **pequeño cuadrado** en la esquina inferior derecha de una celda o rango seleccionado.
-    
-- Sirve para **copiar valores, fórmulas o continuar secuencias** al arrastrarlo hacia abajo, arriba o al costado.
-    
+1. Escribe los primeros valores de la serie.
+       
+2. Selecciona esas celdas.
+       
+3. Usa el controlador de relleno (esquina inferior derecha de la selección) y arrástralo.
+       
 
-👉 En resumen:
+![Fill series](https://i.postimg.cc/4dcwxGPR/1-11-fill-series.png)
+![Fill series result](https://i.postimg.cc/bNggJ3xj/1-11-fill-series-result.png)
 
-- **Transponer** → gira los datos.
-    
-- **Relleno de serie** → crea secuencias automáticamente.
-    
-- **Controlador de relleno** → herramienta para arrastrar y repetir/copiar/continuar valores.
-    
+> Nota: Controlador de relleno, es el **pequeño cuadrado** en la esquina inferior derecha de una celda o rango seleccionado. Sirve para **copiar valores, fórmulas o continuar secuencias** al arrastrarlo hacia abajo, arriba o al costado.
 
-¿Quieres que te muestre un **ejemplo paso a paso con imágenes** para que quede más claro?
+
+
+
+
+
+
+
 
 
 
