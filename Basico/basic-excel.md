@@ -524,6 +524,8 @@ En Excel, el operador `+` es para sumar números y texto (concatenar), mientra
     - Ejemplo: `="Hola" + " " + "Mundo"` puede resultar en `"Hola Mundo"` (aunque a menudo se usa el operador `&` para esto). 
     
 
+> Nota: el operador `+` también puede iniciar una función u operación al igual que el operador `=`. Ejemplo: `+SUMA(A1:A5)` o `+A1+A5)` 
+
 #### El operador `=`
 
 - **Inicio de fórmula:** 
@@ -546,9 +548,63 @@ En Excel, el operador `+` es para sumar números y texto (concatenar), mientra
 
 ### Auditoria de fórmulas
 
-La auditoría de fórmulas en Excel es el **proceso de examinar las fórmulas de una hoja de cálculo para verificar su precisión, detectar y corregir errores, y comprender las relaciones entre celdas**.
+La auditoría de fórmulas en Excel es el **proceso de examinar, visualizar y entender las fórmulas de una hoja de cálculo para verificar su precisión, detectar y corregir errores, y comprender las relaciones entre celdas**.
 
-Utiliza un conjunto de herramientas ubicadas en la pestaña "Fórmulas" en el grupo "Auditoría de fórmulas". Las principales herramientas incluyen Rastrear precedentes y Rastrear dependientes para visualizar las relaciones de las celdas, Mostrar fórmulas para ver el texto de las fórmulas en lugar de sus resultados, y Comprobación de errores para identificar y obtener ayuda sobre los errores.
+Utiliza un conjunto de herramientas ubicadas en la pestaña `"Fórmulas"` en el grupo `"Auditoría de fórmulas"`. Las principales herramientas incluyen Rastrear precedentes y Rastrear dependientes para visualizar las relaciones de las celdas, Mostrar fórmulas para ver el texto de las fórmulas en lugar de sus resultados, y Comprobación de errores para identificar y obtener ayuda sobre los errores.
+
+#### Rastrear precedentes
+
+Para rastrear precedentes en Excel, selecciona la celda con la fórmula que quieres analizar, luego ve a la pestaña `Fórmulas` y haz clic en el botón `Rastrear precedentes` en el grupo "Auditoría de fórmulas". Excel dibujará flechas azules para mostrar las celdas que la fórmula utiliza. Para borrar las flechas, haz clic en **Eliminar flechas**.
+
+Muestra gráficamente las celdas que proporcionan datos para una fórmula. Permitiendo comprender de dónde provienen los datos de una fórmula, verificar su exactitud y rastrear el origen de errores.
+
+![Trace precedents](https://i.postimg.cc/mDgS9TkW/1-15-trace-precedents.png)
+
+#### Rastrear dependientes
+
+Para rastrear dependientes en Excel, selecciona la celda, ve a la pestaña `Fórmulas > Auditoría de fórmulas` y haz clic en `Rastrear dependientes` para mostrar flechas que indican las celdas que se ven afectadas por su valor. Para eliminar las flechas, haz clic en Eliminar flechas en el mismo grupo. 
+
+Revela qué celdas contienen fórmulas que dependen del valor de la celda seleccionada. Ayuda a prever qué partes de la hoja se verán afectadas si se cambia un valor, evitando así impactos inesperados.
+
+![Trade dependents](https://i.postimg.cc/qqv0Wbwp/1-15-trace-dependents.png)
+
+### Referencias
+
+En Excel, una referencia es una indicación que señala una celda o un rango de celdas para que puedan ser utilizados en una fórmula o función, permitiendo así que los cálculos se actualicen automáticamente si los datos cambian. Las referencias son esenciales para hacer que las fórmulas sean dinámicas, y existen distintos tipos:
+
+- Relativas, que cambian según la posición de la celda.
+- Absolutas, que permanecen fijas sin importar la ubicación de la fórmula.
+- Mixtas, que fijan solo la columna o la fila. 
+
+#### Referencias relativas
+
+Las referencias relativas en Excel son el tipo de referencia de celda predeterminado, el cual se ajusta automáticamente cuando una fórmula se copia o se arrastra a otras celdas. En lugar de usar una posición fija (como la celda A1), una referencia relativa se basa en la distancia (relación) de la celda que contiene la fórmula a otra celda. Por ejemplo, si en la celda **D1** tienes la fórmula `=C1*2` y la arrastras hacia abajo, la fórmula en la celda **D2** se convertirá en `=C2*2`, y así sucesivamente, porque las referencias se ajustan a la nueva fila.
+
+![Related references](https://i.postimg.cc/LsFrPCrN/1-16-related-references.png)
+
+Luego de arrastrar queda así, toda la columna `Importe` tiene la misma fórmula:
+
+![Related references result](https://i.postimg.cc/tRvwkCKR/1-16-related-references-result.png)
+
+#### Referencias absolutas
+
+Las referencias absolutas en Excel fijan una celda (o rango) específica para que no cambie su posición, incluso cuando se copia o se arrastra una fórmula a otras celdas. Se identifican porque el signo de dólar `($)` se coloca antes de la columna y de la fila que se desea inmovilizar, como en `$A$1`. Esto asegura que la fórmula siempre haga referencia a la misma celda, sin importar dónde se encuentre el cálculo. 
+
+> Nota: Puedes presionar la tecla `F4` para agregar o eliminar automáticamente los signos de dólar a una referencia de celda mientras editas una fórmula.
+> Si presionas `F4` 1 vez obtienes: `=+D7*$B$4` Fija la celda, tanto la columna como la fila, logrando que al arrastrar siempre se mantenga en la celda `B4`.
+> Si presionas `F4` 2 vez obtienes: `=+D7*B$4` Fija solo la fila, logrando que siempre se mantenga en la fila `4`.
+> Si presionas `F4` 3 vez obtienes: `=+D7*$B4` Fija solo la columna, logrando que siempre se mantenga en la columna `B`.
+
+![Absolute references](https://i.postimg.cc/Bn6smV6x/1-16-absolute-references.png)
+
+Luego de arrastrar queda así, toda la columna `Margen Ganancia` tiene fijada la misma celda:
+
+![Absolute references result](https://i.postimg.cc/52Tcn9Dj/1-16-absolute-references-result.png)
+
+#### Referencias Mixtas
+
+Las referencias mixtas en Excel fijan solo la columna o solo la fila de una celda, mientras que la otra parte de la referencia permanece relativa y cambia al arrastrar la fórmula. Se diferencian de las referencias relativas (que cambian por completo al copiar) y las absolutas (que se mantienen fijas en su totalidad). Un ejemplo común es `$A1` (columna fija, fila relativa) o `A$1` (columna relativa, fila fija).
+
 
 
 
