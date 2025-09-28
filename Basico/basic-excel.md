@@ -462,13 +462,27 @@ Ejemplo: escribes “1” y “2”, seleccionas ambas, y Excel completa hasta �
 
 > Nota: Controlador de relleno, es el **pequeño cuadrado** en la esquina inferior derecha de una celda o rango seleccionado. Sirve para **copiar valores, fórmulas o continuar secuencias** al arrastrarlo hacia abajo, arriba o al costado.
 
+#### Relleno rápido
 
+Para usar Relleno rápido en Excel, escribe manualmente el primer dato en la columna adyacente y luego, en la siguiente celda, comienza a escribir el segundo dato. Excel detectará el patrón en tus datos y te mostrará una vista previa para rellenar el resto de la columna. Presiona Intro para aceptar la vista previa, o pulsa `Ctrl+E` para ejecutar la función manualmente. 
 
+![Quick filling](https://i.postimg.cc/QtVCQNP5/1-12-quick-filling.png)
 
+#### Ancho de columna - Alto de fila
 
+Para cambiar el ancho de columna o el alto de fila en Excel, puedes:
 
+1. Arrastrar manualmente los bordes de las columnas o filas
+2. Seleccionar la columna o fila y usar el menú `Inicio > Celdas > Formato > Ancho de columna o Alto de fila` para introducir un valor exacto.
+3. Hacer doble clic en el borde para autoajustar el tamaño al contenido de las celdas. 
+4. Hacer clic derecho sobre la letra o número de la fila o columna, selecciona ancho de columna e introduce un valor exacto.
 
+#### Buscar y reemplazar
 
+Para buscar y reemplazar en Excel, presiona `Ctrl + H` o ve a `Inicio > Buscar y seleccionar > Reemplazar` para abrir el cuadro de diálogo. En el campo "Buscar" escribe el texto a encontrar, en "Reemplazar con" escribe el nuevo texto, y luego haz clic en Reemplazar para cambiar una instancia o en Reemplazar todo para cambiar todas a la vez. 
+
+![Find](https://i.postimg.cc/bwWtNBv2/1-13-find.png)
+![Replace](https://i.postimg.cc/brmGX65W/1-14-replace-all.png)
 
 
 
