@@ -268,7 +268,7 @@ Esto es útil si quieres mostrar una fórmula como texto sin que Excel la ejecut
 En Excel, los íconos **Cancelar**, **Introducir**, y **Insertar Funciones** están ubicados cerca de la barra de fórmulas y tienen las siguientes funciones:
 
 1. **Icono Cancelar (X):**
-   - **Propósito:** Cancela la entrada o edición actual en la celda activa. Si estás escribiendo algo en una celda y decides no guardar los cambios, puedes hacer clic en este icono para volver a la celda sin cambios.
+   - **Propósito:** Cancela la entrada o edición actual en la celda activa. Si estás escribiendo algo en una celda y decides no guardar los cambios, puedes hacer clic en este icono para volver a la celda sin cambios o usar `Esc`.
 
 2. **Icono Introducir (✓):**
    - **Propósito:** Confirma y guarda la entrada o edición actual en la celda activa. Funciona de manera similar a presionar **Enter** después de escribir en una celda, guardando lo que hayas ingresado.
@@ -286,7 +286,24 @@ También, en lugar de usar los íconos, puedes:
 - **Introducir:** Presiona **Enter** para confirmar la entrada.
 - **Insertar Función:** Presiona **Shift + F3** para abrir el cuadro de diálogo de insertar función.
 
-#### Selección de filas y columnas en Excel
+#### Selección
+
+##### Seleccionar celdas
+
+Para **seleccionar una celda** en Excel, solo haz clic en la celda que deseas seleccionar.
+
+Para **seleccionar varias celdas**, puedes:
+
+1. **Celdas adyacentes**: Haz clic en la primera celda, luego mantén presionada la tecla **Shift** y haz clic en la última celda del rango.
+    
+2. **Celdas no adyacentes**: Haz clic en la primera celda, luego mantén presionada la tecla **Ctrl** y haz clic en las celdas adicionales que deseas seleccionar.
+    
+3. **Seleccionar una celda**: Simplemente haz clic en la celda que deseas seleccionar.
+	
+4. **Seleccionar un grupo de celdas arrastrando**: Haz clic en la primera celda del grupo que deseas seleccionar y luego **mantén presionado el clic derecho** mientras arrastras el cursor sobre las celdas que quieras incluir. Una vez que hayas cubierto el área deseada, suelta el botón del mouse.
+	
+
+##### Selección de filas y columnas
 
 1. **Filas o columnas únicas:**
    - **Fila:** Haz clic en el número de la fila a la izquierda.
