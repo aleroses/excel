@@ -630,9 +630,9 @@ Creemos una tabla de multiplicar.
 
 ![Multiplication table](https://i.postimg.cc/YqnnNpss/1-16-mixed-references-multiplication-table.png)
 
+Para este caso, la fila `2` necesitamos que sea fija, ya que al arrastrar hacia abajo esta cambiaría a fila `3` y no necesitamos eso. Ahora para la columna `F` necesitamos que sea fija para que al arrastrar hacia la derecha se mantenga en el mismo lugar.
 
-
-
+![Mixed references multiplication table result](https://i.postimg.cc/7b8g9WSL/1-16-mixed-references-multiplication-table-result.png)
 
 
 
