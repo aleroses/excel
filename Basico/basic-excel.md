@@ -484,31 +484,80 @@ Para buscar y reemplazar en Excel, presiona `Ctrl + H` o ve a `Inicio > Buscar y
 ![Find](https://i.postimg.cc/bwWtNBv2/1-13-find.png)
 ![Replace](https://i.postimg.cc/brmGX65W/1-14-replace-all.png)
 
-
-
-40:00 min
-https://www.youtube.com/watch?v=JcE2UhFWZvc&t=10s
-
-
-
 ### Datos
 
 Excel usa la extensión `.xlsx` en sus archivos.
 
-Los apostrofes detienen las formulas.
+Los apóstrofes detienen las fórmulas.
 
-
-Atajos Excel en Español:
+#### Atajos Excel en Español:
 
 - `Ctrl + u`: Crear un nuevo libro.
 - `Ctrl + g`: Guardar.
 - `Ctrl + Flecha abajo`: Ver las filas totales.
 
+## Sesión 02: Fórmulas y funciones
+
+Objetivos:
+
+- Uso de fórmulas
+- Auditoria de fórmulas
+- Referencia de fórmulas
+- Funciones básicas y lógicas
+
+### Operadores `=` y `+`
+
+En Excel, el operador `+` es para sumar números y texto (concatenar), mientras que el operador `=` se utiliza para iniciar una fórmula y para realizar comparaciones lógicas o como parte de una concatenación de texto. 
+
+#### El operador `+`
+
+- **Suma:** 
+    
+    Se usa para sumar dos o más números o referencias de celda. 
+    
+    - Ejemplo: `=5+3` resulta en `8`. 
+    
+- **Concatenación (texto):** 
+    
+    También puede conectar (unir) dos o más cadenas de texto. 
+    
+    - Ejemplo: `="Hola" + " " + "Mundo"` puede resultar en `"Hola Mundo"` (aunque a menudo se usa el operador `&` para esto). 
+    
+
+#### El operador `=`
+
+- **Inicio de fórmula:** 
+    
+    Es indispensable al principio de cualquier cálculo o fórmula en Excel. Indica a Excel que el contenido de la celda es una operación que debe calcularse en lugar de solo mostrarse. 
+    
+    - Ejemplo: `=SUMA(A1:A5)`. 
+    
+- **Comparación:** 
+    
+    Se utiliza en fórmulas para comparar si dos valores son iguales. 
+    
+    - Ejemplo: `=A1=B1` devolverá `VERDADERO` si el valor en la celda A1 es igual al valor en la celda B1, y `FALSO` si no lo son. 
+    
+- **Concatenación de texto:** 
+    
+    Forma parte de la construcción de cadenas de texto, especialmente cuando se combina con otras celdas o texto, a menudo utilizando el operador `&` (ampersand) junto con el signo igual al inicio. 
+    
+    - Ejemplo: `="El resultado es " & A1` podría mostrar "El resultado es 10" si la celda A1 contiene el número 10.
+
+### Auditoria de fórmulas
+
+La auditoría de fórmulas en Excel es el **proceso de examinar las fórmulas de una hoja de cálculo para verificar su precisión, detectar y corregir errores, y comprender las relaciones entre celdas**.
+
+Utiliza un conjunto de herramientas ubicadas en la pestaña "Fórmulas" en el grupo "Auditoría de fórmulas". Las principales herramientas incluyen Rastrear precedentes y Rastrear dependientes para visualizar las relaciones de las celdas, Mostrar fórmulas para ver el texto de las fórmulas en lugar de sus resultados, y Comprobación de errores para identificar y obtener ayuda sobre los errores.
 
 
 
+### Datos
 
 
+
+1:00:00 min
+https://www.youtube.com/watch?v=JcE2UhFWZvc&t=10s
 
 
 
