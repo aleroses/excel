@@ -339,7 +339,24 @@ En Excel, puedes copiar contenido de varias maneras:
 
 ![](https://i.postimg.cc/TYCD7RNR/1-8-ctrl-edge.png)
 
-Usa la tecla escape para dejar de copiar.
+5. **Transponer datos**
+	- Sirve para **cambiar filas por columnas** (y viceversa).
+	    
+	- Ejemplo: si tienes nombres en fila horizontal, al transponerlos los verás en una columna vertical.
+	    
+	- **Cómo hacerlo:**
+	    
+	    1. Copias los datos.
+	        
+	    2. Vas a la celda donde quieres pegarlos.
+	        
+	    3. Clic derecho → **Pegado especial** → **Transponer**.
+	        
+
+![transpose](https://i.postimg.cc/YSpWTH4d/1-8-transpose.png)
+![Transpose result](https://i.postimg.cc/SQWzQR6Q/1-8-transpose-result.png)
+
+> Nota: Usa la tecla escape para dejar de copiar.
 
 #### Pegar contenido
 
@@ -412,12 +429,53 @@ Estas opciones te permiten eliminar contenido de manera flexible, dependiendo de
 
 Estos métodos te permiten desplazar el contenido en tu hoja de cálculo de manera eficiente.
 
-#### 
+#### Cortar contenido
 
-Transponer datos
+Para **cortar** en Excel:
 
+1. **Selecciona** la celda o el rango de celdas que quieres mover.
+    
+2. Haz clic en el botón **Cortar ✂** en la barra de herramientas (o presiona **Ctrl + X**).
+    
+3. Luego, **selecciona la celda** donde quieras pegar el contenido y presiona **Ctrl + V** o haz clic en el botón **Pegar**.
+    
 
+![Cut](https://i.postimg.cc/tRmH8tcd/1-10-cut.png)
 
+#### Serie de relleno
+
+**2. Relleno de serie**
+
+- Te permite **crear secuencias automáticas** (números, fechas, días de la semana, meses, etc.).
+    
+- Ejemplo: escribes “1” y “2”, seleccionas ambas, y Excel completa hasta “10”.
+    
+- **Cómo hacerlo:**
+    
+    1. Escribe los primeros valores de la serie.
+        
+    2. Selecciona esas celdas.
+        
+    3. Usa el controlador de relleno (esquina inferior derecha de la selección) y arrástralo.
+        
+
+**3. Controlador de relleno**
+
+- Es el **pequeño cuadrado** en la esquina inferior derecha de una celda o rango seleccionado.
+    
+- Sirve para **copiar valores, fórmulas o continuar secuencias** al arrastrarlo hacia abajo, arriba o al costado.
+    
+
+👉 En resumen:
+
+- **Transponer** → gira los datos.
+    
+- **Relleno de serie** → crea secuencias automáticamente.
+    
+- **Controlador de relleno** → herramienta para arrastrar y repetir/copiar/continuar valores.
+    
+
+¿Quieres que te muestre un **ejemplo paso a paso con imágenes** para que quede más claro?
 
 
 
@@ -454,19 +512,8 @@ Atajos Excel en Español:
 
 
 
-Apostrofe detiene las formulas ´ parecido a este pero mas recto xd 
-=´A6/$B$3
 
-Modificar contenido de celda
-- F2 
-- Doble clic 
-- Desde la barra superior donde sale el texto de la celda
 
-X V fx
-- Si borro algo por error solo le pico a la x de arriba para volver a su estado normal 
-- el check sirve para confirmar que todo lo hecho en la celda está correcto
-
-alt 126 ~
 
 ## Atajos de teclado Excel en Ingles
 
@@ -540,3 +587,5 @@ Estos atajos pueden mejorar significativamente tu productividad en Excel, permit
 #090b10
 
 #4f46e5
+
+alt 126 ~
