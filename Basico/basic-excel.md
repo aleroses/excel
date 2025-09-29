@@ -771,7 +771,69 @@ Ejemplo de uso
 Si tienes los números 10, 20 y 30 en las celdas A1, A2 y A3 respectivamente, puedes calcular su promedio con la fórmula:  
 `=PROMEDIO(A1:A3)`. Esto dará como resultado 20.
 
-#### Maximo
+#### Máximo
+
+La función MAX en Excel se utiliza para encontrar el valor más grande dentro de un conjunto de números. Es una función estadística que devuelve el mayor de los números proporcionados como argumentos, y se escribe con la sintaxis `=MAX(número1, [número2], ...)`.
+
+> Nota: El nombre de la función MAX en inglés es `MAX`.
+
+#### Minimo
+
+La función `MIN` en Excel se utiliza para encontrar el valor numérico más pequeño dentro de un conjunto de valores. Puedes usarla con números, referencias a celdas o matrices como argumentos para identificar el número más bajo de ese conjunto.
+
+> Nota: El nombre de la función Min en inglés es `MIN`.
+
+#### Contar
+
+La función CONTAR en Excel sirve para contar el número de celdas que contienen datos numéricos, incluidas fechas en un rango especificado, y no cuenta las celdas vacías o que contienen texto. Es útil para obtener la cantidad de entradas numéricas en un conjunto de datos, por ejemplo, para saber cuántos valores numéricos hay en una columna o en una matriz de números, como se ve en la fórmula `=CONTAR(A1:A20)`. 
+
+> Nota: En inglés, la función "CONTAR" se llama `COUNT`.
+
+Excel tiene otras funciones para contar diferentes tipos de datos: 
+
+- **CONTAR.BLANCO:** Cuenta las celdas vacías en un rango.
+- **CONTARA:** Cuenta las celdas que no están vacías (cualquier tipo de dato). En inglés es `COUNTA`.
+- **CONTAR.SI**: Cuenta las celdas que cumplen un criterio específico.
+- **CONTAR.SI.CONJUNTO:** Cuenta las celdas que cumplen múltiples criterios.
+
+Ejemplo combinando fórmulas:
+
+Contamos el total de datos y luego le restamos la cantidad de datos numéricos. Con esto sabremos el total de celdas con texto.
+
+`=COUNTA(A3:E11)-COUNT(A3:E11)`
+
+#### Contara
+
+La función `CONTARA` en Excel se usa para contar el número de celdas que no están vacías dentro de un rango especificado. Esta función cuenta cualquier tipo de dato en la celda, ya sea texto, números, fechas, valores lógicos o incluso errores, ignorando únicamente las celdas que están completamente en blanco.
+
+> Nota: En inglés, la función "CONTARA" se llama `COUNTA`.
+
+#### Contar.si
+
+La función CONTAR.SI en Excel (y Google Sheets) es una función estadística que cuenta el número de celdas dentro de un rango que cumplen un criterio específico que tú defines. Su sintaxis es `=CONTAR.SI(rango; criterio)` y es útil para realizar conteos condicionales, por ejemplo, para saber cuántas veces aparece una ciudad en una lista de clientes o cuántos productos de cierto tipo hay en un inventario. 
+
+Cómo funciona:
+
+1. **Rango:** Es el conjunto de celdas en el que quieres buscar el criterio. 
+2. **Criterio:** Es la condición que las celdas deben cumplir para ser contadas. Puede ser: 
+    - **Un número:** `=CONTAR.SI(A1:A10; 5)` contará las celdas en A1:A10 que contengan el número 5. 
+    - **Un texto:** `=CONTAR.SI(B1:B10; "Aprobado")` contará las celdas que contengan exactamente la palabra "Aprobado". 
+    - **Una expresión con operadores lógicos:** Para usar operadores como >, <, >=, <=, o <> (distinto a), el criterio debe ir entre comillas. Por ejemplo: 
+        - `=CONTAR.SI(C1:C10; ">50")` cuenta celdas con valores mayores a 50. 
+        - `=CONTAR.SI(D1:D10; "<>En curso")` cuenta celdas que no tienen el texto "En curso". 
+    - **Un comodín:** Los comodines `?` (un carácter) y `*` (cero o más caracteres) permiten buscar patrones de texto. 
+
+Puntos clave:
+
+- **Un solo criterio:** solo evalúa un criterio a la vez. 
+- **CONTAR.SI.CONJUNTO:** Si necesitas contar celdas basándote en varios criterios simultáneamente, debes usar la función CONTAR.SI.CONJUNTO. 
+- **Distinguir mayúsculas/minúsculas:** La función no distingue entre mayúsculas y minúsculas para el texto. 
+- **Comillas:** Los criterios de texto, operadores lógicos y fechas deben ir entre comillas para ser interpretados correctamente. 
+
+
+
+
+
 
 
 
