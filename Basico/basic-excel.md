@@ -634,15 +634,54 @@ Para este caso, la fila `2` necesitamos que sea fija, ya que al arrastrar hacia 
 
 ![Mixed references multiplication table result](https://i.postimg.cc/7b8g9WSL/1-16-mixed-references-multiplication-table-result.png)
 
+### Asignar nombres
 
+Asignar nombres en Excel es el proceso de crear un nombre descriptivo para una celda, un rango de celdas, una fórmula o una constante, en lugar de usar su dirección de celda tradicional (como `A1` o `B2:C5`).
 
+Esto permite que tus hojas de cálculo sean más organizadas, fáciles de leer y comprender, al usar nombres con significado en las fórmulas, como `"tasa_interes"` en lugar de `D2`.
 
+¿Cómo se asigna un nombre en Excel?
 
+Existen dos métodos principales: 
 
+1. **Usando el cuadro de nombres:**
+    
+    - Selecciona la celda o el rango al que quieres asignar un nombre. 
+    - Haz clic en el cuadro de nombres, que se encuentra a la izquierda de la barra de fórmulas. 
+    - Escribe el nombre que deseas darle a la selección y presiona Enter. 
 
+![Assign names](https://i.postimg.cc/bvkhr6RG/1-17-assign-names.png)
 
+2. **Desde la pestaña "Fórmulas":**
+    
+    - Ve a la pestaña Fórmulas en la cinta de opciones de Excel. 
+    - Haz clic en el botón Nombres definidos y selecciona la opción Definir nombre.... 
+    - En el cuadro de diálogo, introduce el nombre en el campo "Nombre" y la referencia a la celda o rango en "Se refiere a:". 
 
+![Assign names Other](https://i.postimg.cc/05My1CTV/1-17-assign-names-other.png)
 
+Restricciones para los nombres:
+
+- El primer carácter debe ser una letra o un guion bajo `_`. 
+- No se permiten espacios; en su lugar, usa guiones bajos (como "Total_Ventas"). 
+- Los nombres no deben ser iguales a una referencia de celda (por ejemplo, no se puede llamar a un rango "A1"). 
+- Excel no distingue entre mayúsculas y minúsculas. 
+
+Administrar los nombres definidos
+
+Puedes ver, editar, eliminar o crear nombres desde el `Administrador de nombres`, al que puedes acceder desde la pestaña `"Fórmulas"`.
+
+![Name manager](https://i.postimg.cc/kG1QSvyH/1-17-assign-names-manager.png)
+
+Para usar los nombres solo escribelos donde necesites:
+
+![Assign names selection](https://i.postimg.cc/V6HvBG3r/1-17-assign-names-selection.png)
+
+Con grupos de celdas:
+
+![Assign names group](https://i.postimg.cc/7L0jNfdt/1-17-assign-names-group.png)
+
+![Assign names group name](https://i.postimg.cc/QC4zM5Kr/1-17-assign-names-group-name.png)
 
 
 
