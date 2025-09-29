@@ -943,13 +943,13 @@ Otra manera:
 
 ![](https://i.postimg.cc/283nh9SB/1-18-number.png)
 
-##### Sumar fechas
+#### Sumar fechas
 
 Para sumar números a una fecha en Excel, simplemente utiliza el operador de suma (+) o resta (-) seguido del número de días. Dado que Excel trata las fechas como números, esta operación aritmética simple es la forma más directa de sumar o restar días a una fecha. Si necesitas sumar años o meses, o días laborables, puedes usar las funciones `FECHA` o `DIAS.LAB`, o convertir las unidades a días y sumarlas.
 
 **Ejemplo:** `=A1+7` sumará 7 días a la fecha en A1.
 
-#### Dias.lab
+### Dias.lab
 
 La función `DIAS.LAB` en Excel calcula el número de días laborables entre dos fechas, excluyendo fines de semana (sábados y domingos por defecto) y días festivos especificados en una lista opcional. La sintaxis es `DIAS.LAB(fecha_inicial, fecha_final, [vacaciones])`, donde los argumentos `fecha_inicial` y `fecha_final` son obligatorios, y `vacaciones` es un rango de fechas que se consideran no laborables. 
 
@@ -961,12 +961,6 @@ Cómo funciona
 2. **Fines de semana:** Excluye automáticamente el sábado y el domingo como días no laborables. 
 3. **Días festivos:** Permite especificar una lista de fechas (por ejemplo, días festivos nacionales) que no se contarán como días laborables. 
 
-Sintaxis y argumentos 
-
-- `fecha_inicial` (obligatorio): La fecha de inicio del período.
-- `fecha_final` (obligatorio): La fecha de fin del período.
-- `[vacaciones]` (opcional): Un rango de celdas que contiene las fechas de los días festivos a excluir del cálculo.
-
 Ejemplo de uso
 
 Para calcular los días laborables entre el 1 de enero de 2024 y el 31 de enero de 2024, y excluyendo un día festivo el 15 de enero de 2024, podrías escribir en Excel:  
@@ -977,12 +971,282 @@ Diferencia con otras funciones
 - `DIAS.LAB` es ideal para la mayoría de las situaciones, ya que asume un fin de semana de sábado y domingo. 
 - Si necesitas definir días de fin de semana diferentes (por ejemplo, solo domingos, o lunes y martes), debes usar la función `DIAS.LAB.INTL`.
 
+### Fecha - Mes - Día
+
+En Excel, las funciones AÑO(), MES() y DÍA() se usan para extraer el número del año, el número del mes y el número del día de una fecha, respectivamente. Cada función toma una fecha como argumento y devuelve el componente numérico correspondiente. Por ejemplo, si en la celda A1 tienes la fecha 25/03/2024, =AÑO(A1) devolvería 2024, =MES(A1) devolvería 3, y =DÍA(A1) devolvería 25. 
+
+Ejemplo de uso:
+
+Imagina que tienes la siguiente información en tu hoja de Excel:
+
+|Celda|Contenido|
+|---|---|
+|A1|25/03/2024|
+
+Para extraer el año, mes y día de esta fecha, puedes usar las siguientes fórmulas:
+
+1. **Para obtener el año:**
+    
+    - En una celda vacía (por ejemplo, B1), escribe: `=AÑO(A1)`
+    - El resultado en la celda B1 será: `2024`. 
+    
+2. **Para obtener el mes:**
+    
+    - En otra celda (por ejemplo, C1), escribe: `=MES(A1)`
+    - El resultado en la celda C1 será: `3`. 
+    
+3. **Para obtener el día:**
+    
+    - En otra celda (por ejemplo, D1), escribe: `=DÍA(A1)`
+    - El resultado en la celda D1 será: `25`. 
+    
+
+Ejemplo:
+
+Si a `C4 = 6/6/2016` le pasamos `=DATE(YEAR(C4) + 2, MONTH(C4), DAY(C4))` obtenemos `6/6/2018`. Solo sumamos dos años, nada más.
+
+`=DATE("1996", "1", "27")`
+
+### Fecha.mes
+
+La función FECHA.MES en Excel devuelve el número de serie de una fecha que está un número determinado de meses antes o después de una fecha especificada. Su sintaxis es `FECHA.MES(fecha_inicial; meses)`, donde `fecha_inicial` es la fecha de referencia y `meses` es el número de meses a sumar (positivo) o restar (negativo). 
+
+> Nota: La función "fecha.mes" de Excel en inglés se llama `EDATE`.
+
+Ejemplo:
+
+Si en la celda A1 tienes la fecha 23/05/2008 y en la celda B1 tienes el número 5, la fórmula `=FECHA.MES(A1; B1)` te devolverá el número de serie de la fecha 23/10/2008, ya que suma 5 meses a la fecha inicial. 
+
+¿Por qué usar FECHA.MES?
+
+- **Calcular fechas de vencimiento:** 
+    
+    Puedes usarla para determinar la fecha de vencimiento de un contrato o factura, sumando un período de meses a la fecha de emisión. 
+    
+- **Simplificar cálculos:** 
+    
+    Es una forma rápida de añadir o quitar meses de una fecha sin tener que hacer la operación manualmente. 
+    
+- **Automatizar fechas:** 
+    
+    Al integrar la función en una hoja de cálculo, las fechas futuras se actualizan automáticamente si cambia la fecha inicial o el número de meses. 
+    
+
+Consideraciones importantes:
+
+- Excel almacena las fechas como números de serie; por lo tanto, el resultado de la función puede aparecer en formato de número si la celda no está formateada como fecha. 
+- El valor de la fecha inicial puede ser una fecha escrita directamente, el resultado de la función FECHA o un valor de otra fórmula o función.
+
+### Fin.mes
+
+La función `FIN.MES` en Excel devuelve la fecha del último día de un mes, basándose en una fecha inicial y un número de meses especificados. Se utiliza para calcular fechas de vencimiento que caen al final del mes, planificar financieras y gestionar ciclos de facturación o plazos. 
+
+> Nota: La función "fin.mes" de Excel en inglés se llama `EOMONTH`.
+
+Sintaxis
+
+```
+FIN.MES(fecha_inicial, meses)
+```
+
+- `fecha_inicial`: (Obligatorio) Una fecha que sirve como referencia. 
+- `meses`: (Obligatorio) El número de meses a sumar o restar a la fecha inicial. 
+    - Un valor positivo devuelve una fecha futura. 
+    - Un valor negativo devuelve una fecha pasada. 
+    - Si el valor no es entero, se trunca. 
+
+Cómo funciona
+
+La función, dentro de la categoría de funciones de fecha y hora, calcula la fecha que coincide con el último día del mes que se encuentre el número indicado de meses antes o después de la `fecha_inicial`. 
+
+Ejemplos 
+
+- `=FIN.MES("2025-09-15", 0)`: 
+    
+    Devuelve el último día del mes de la fecha dada, que sería el 30 de septiembre de 2025.
+    
+- `=FIN.MES("2025-09-15", 1)`: 
+    
+    Devuelve el último día del mes siguiente, que sería el 31 de octubre de 2025.
+    
+- `=FIN.MES("2025-09-15", -1)`: 
+    
+    Devuelve el último día del mes anterior, que sería el 31 de agosto de 2025.
+    
+
+### Hora
+
+La función HORA en Excel devuelve la parte horaria de un valor de hora específico como un número entero entre 0 (para 12:00 a. m.) y 23 (para 11:00 p. m.). Su sintaxis es `=HORA(valor_de_hora)`, donde `valor_de_hora` puede ser una hora escrita como texto (ej. "6:45 p.m."), un número decimal, o un valor de celda que contenga una hora. 
+
+> Nota: La función "hora" de Excel en inglés se llama `hour`.
+
+Cómo funciona:
+
+1. **Extrae la hora:** 
+    
+    La función HORA toma un valor de fecha y hora y separa su componente de hora. 
+    
+2. **Retorna un número entero:** 
+    
+    El resultado es un número entero que representa la hora en un formato de 24 horas. 
+    
+
+Ejemplos de uso: 
+
+- Si tienes la hora "13:45" en una celda (ej. A1), usar la fórmula `=HORA(A1)` devolverá el número `13`.
+- Si introduces un valor de texto, como `=HORA("1:49 p.m.")`, el resultado será `13`.
+
+Propósito:
+
+- Esta función es útil para analizar y manipular datos de tiempo. 
+- Permite desglosar los componentes de una fecha y hora para realizar cálculos o tomar decisiones basadas en la hora.
+
+### Minuto
+
+La función `MINUTO()` en Excel se usa para extraer el componente de minutos de un valor de tiempo. Devuelve un número entero entre 0 y 59, que representa los minutos de una hora. Por ejemplo, si la celda A1 contiene "14:35", la fórmula `=MINUTO(A1)` devolverá el número `35`. 
+
+> Nota: La función "minuto" de Excel en inglés se llama `minute`.
+
+Sintaxis de la función:
+
+```
+=MINUTO(valor_de_tiempo)
+```
+
+- **valor_de_tiempo (obligatorio):** Es el valor de tiempo o la celda que contiene el tiempo del cual deseas extraer los minutos. 
+
+### Segundos
+
+La función `SEGUNDO()` en Excel extrae la parte de los segundos de un valor de tiempo y devuelve un número entero entre 0 y 59. Su sintaxis es `SEGUNDO(núm_de_serie)`, donde `núm_de_serie` es la hora de la que quieres obtener los segundos, ya sea escrita como texto, número decimal o el resultado de otra función de fecha y hora. 
+
+> Nota: La función "SEGUNDO" de Excel en inglés se llama `SECOND`.
+
+Ejemplo:
+
+Si tienes la hora "1:19:49 p.m." en una celda, la función `SEGUNDO()` aplicada a esa celda devolverá `49`. 
+
+```
+=SEGUNDO("1:19:49 p.m.") // Resultado: 49
+```
+
+### Nshora
+
+La función NSHORA en Excel (ahora conocida como HORA) se utiliza para convertir valores de horas, minutos y segundos en un número de serie de hora decimal. Su sintaxis es `HORA(hora, minuto, segundo)` y devuelve un valor entre 0 y 0.99988426, que representa la fracción de un día, para que Excel pueda reconocerlo como una hora. 
+
+> Nota: La función "NSHORA" de Excel en inglés se llama `TIME`.
+
+Cómo funciona
+
+- **Argumentos:** Acepta tres argumentos numéricos: `hora`, `minuto` y `segundo`. 
+- **Resultado:** Devuelve un valor numérico que representa la hora en un formato decimal (por ejemplo, 0.5 para las 12:00 PM). 
+- **Formato de celda:** Para visualizar el resultado correctamente, debes aplicar el formato de celda de "Hora" a la celda que contiene la fórmula, de lo contrario, Excel podría mostrarlo como un número general o de fecha. 
+
+Ejemplo de uso
+
+Si ingresas la fórmula `=HORA(14, 30, 0)` en una celda y le aplicas el formato de hora, la celda mostrará 02:30 PM o su equivalente en formato decimal, como 0.625. 
+
+### Carácter
+
+La función `CARACTER()` en Excel devuelve un carácter específico basándose en un número proporcionado, que actúa como un código de referencia dentro del conjunto de caracteres disponible en tu sistema operativo (como ASCII o Unicode). Esta función es útil para insertar caracteres especiales, generar símbolos que no están directamente en el teclado o para trabajar con datos que incluyen caracteres de otros sistemas informáticos. 
+
+> Nota: La función "carácter" de Excel en inglés se llama `CHAR`.
+
+Sintaxis de la función:
+
+`=CARACTER(número)` 
+
+- **número:** Es un número entre 1 y 255, o incluso más alto si se trabaja con Unicode, que representa el carácter que deseas obtener.
+
+Ejemplos de uso: 
+
+- `=CARACTER(9)` podría devolver un carácter de tabulación (un salto de línea).
+- `=CARACTER(64)` devuelve el símbolo "@".
+- `=CARACTER(169)` devuelve el símbolo de copyright "©".
+
+Para qué se utiliza:
+
+- **Insertar símbolos y caracteres especiales:** 
+    
+    Permite añadir símbolos como el símbolo de grados (°), el símbolo de copyright (©) o caracteres de otros idiomas que no están en tu teclado, usando sus códigos numéricos. 
+    
+- **Construir cadenas de texto complejas:** 
+    
+    Puedes usarla junto con otras funciones, como `CONCATENAR`, para crear textos que incluyan caracteres especiales o saltos de línea. 
+    
+- **Traducir códigos:** 
+    
+    Sirve para convertir números de página de códigos de otros ordenadores en caracteres reconocibles en tu propio sistema.
+
+### Código
+
+La función `CÓDIGO()` en Excel devuelve el código numérico (basado en el estándar ASCII) del primer carácter de un texto. Su sintaxis es `=CÓDIGO(texto)`, y se usa para obtener el valor numérico de letras, números o símbolos, lo cual es útil para analizar o depurar datos basados en caracteres. 
+
+> Nota: La función "CÓDIGO" de Excel en inglés se llama `CODE`.
+
+¿Cómo funciona?
+
+- La función `CÓDIGO()` toma un argumento obligatorio: `texto`. 
+- Este `texto` puede ser un carácter específico escrito entre comillas (ej. `"A"`) o una celda que contenga el carácter (ej. `A1`). 
+- La función devuelve el número que representa ese carácter en el conjunto de caracteres utilizado por el equipo. Por ejemplo, `=CÓDIGO("A")` devuelve 65, ya que 65 es el código ASCII de la letra "A" mayúscula. 
+
+Ejemplos: 
+
+```
+=CÓDIGO("A") = 65
+=CÓDIGO("!") = 33
+=CÓDIGO("a") = 97
+=CODE("@") = 64
+```
+
+### Minúscula
+
+La función `MINUSC()` en Excel convierte un texto a minúsculas. Su sintaxis es `=MINUSC(texto)`, donde `texto` es el texto que deseas transformar o una referencia a la celda que lo contiene. Esta función no afecta a los caracteres que no sean letras y es útil para estandarizar texto y mejorar la legibilidad en hojas de cálculo.
+
+> Nota: La función `MINUSC()`en inglés es `LOWER()`.
+
+Ejemplo práctico
+
+Si en la celda A1 tienes el texto "Hola Mundo", puedes escribir en otra celda:  
+`=MINUSC(A1)` Y la celda de resultado mostrará: `hola mundo`.
+
+### Mayúscula
+
+La función MAYÚSC() en Excel es una función de texto que convierte todo el texto dentro de una celda a letras mayúsculas. Se utiliza escribiendo `=MAYÚSC(referencia_celda)` en una celda, reemplazando `referencia_celda` con la celda que contiene el texto que deseas convertir.
+
+> Nota: La función `MAYÚSC()`en inglés es `UPPER()`.
+
+### NomPropio
+
+La función `NOMPROPIO()` en Excel convierte la primera letra de cada palabra dentro de una celda a mayúscula, y el resto de las letras a minúscula, dejando la primera letra de cada palabra como mayúscula, como por ejemplo, "juan pérez]" se convertiría en "Juan Pérez".
+
+> Nota: La función `NomPropio()`en inglés es `PROPER()`.
+
+Sintaxis:
+
+La sintaxis de la función es simple: `=NOMPROPIO(texto)`. 
+
+- `texto`: Es el texto que se desea modificar. Puede ser una referencia a una celda (como `A1`) o el texto escrito directamente entre comillas (como `"ejemplo"`).
+
+Ejemplos:
+
+- `=NOMPROPIO("juan perez")`: devolverá "Juan Pérez". 
+- `=NOMPROPIO("maria RODRIGUEZ")`: devolverá "Maria Rodriguez". 
+- `=NOMPROPIO(A2)`: tomará el texto de la celda A2 y lo convertirá a formato de nombre propio.
+
+### Izquierda
+
+### Derecha
 
 
 
 
 
 
+
+
+que es la funcion Dias.lab en excel
+
+nombre de la funcion Dias.lab en ingles en excel
 
 
 > Nota: 
