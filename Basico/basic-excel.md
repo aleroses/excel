@@ -683,9 +683,101 @@ Con grupos de celdas:
 
 ![Assign names group name](https://i.postimg.cc/QC4zM5Kr/1-17-assign-names-group-name.png)
 
+### **Fórmulas en Excel**
+
+- Una **fórmula** es una **expresión creada por ti** para hacer cálculos.
+    
+- Siempre empieza con el signo **=**.
+    
+- Puede usar **operadores matemáticos** (+, -, *, /) y referencias a celdas.
+    
+
+**Ejemplo:**  
+`=A1+B1` → suma el valor de la celda A1 y B1.  
+`=(A1+B1)*C1` → suma A1 y B1 y multiplica por C1.
+
+👉 En una fórmula, tú decides la operación paso a paso.
+
+### **Funciones en Excel**
+
+- Una **función** es una **fórmula predefinida por Excel** para hacer cálculos específicos.
+    
+- Ya viene con un nombre y una sintaxis.
+    
+- Solo tienes que indicar los argumentos que pide.
+    
+
+**Ejemplo:**  
+`=SUMA(A1:A10)` → suma todos los valores entre A1 y A10.  
+`=PROMEDIO(B1:B5)` → calcula el promedio de esas celdas.  
+`=HOY()` → devuelve la fecha actual.
+
+👉 Con funciones, Excel hace el cálculo sin que tengas que escribir toda la operación.
+
+> Nota: Puedes **combinar funciones en una fórmula** (anidar funciones).  
+    Ejemplo: `=PROMEDIO(SUMA(A1:A5), SUMA(B1:B5))`.
+
+#### Redondear
+
+La función REDONDEAR en Excel redondea un número a un número específico de posiciones decimales, aplicando las reglas matemáticas estándar (redondea hacia arriba si el siguiente dígito es 5 o mayor, y hacia abajo si es 4 o menor). Su sintaxis es `REDONDEAR(número, núm_decimales)`, donde "número" es el valor a redondear y "núm_decimales" define la cantidad de decimales deseada, incluso puede ser cero para redondear al entero más cercano o negativo para redondear a la izquierda de la coma decimal.
+
+> Nota: En inglés la función se llama `ROUND()`.
+
+#### Entero
+
+La función ENTERO en Excel se usa para redondear un número hacia abajo al entero inferior más próximo, es decir, elimina la parte decimal de un número. Su sintaxis es `=ENTERO(número)`, donde "número" es el valor que se desea convertir a un entero, como por ejemplo `=ENTERO(99.44)`, que devuelve `99`. 
+
+> Nota: En inglés es `INT`.
+
+Cómo funciona: 
+
+- **Para números positivos:** 
+    
+    La función truncará el decimal y devolverá el entero más cercano menor o igual al número.
+    
+    - `=ENTERO(99.44)` resultará en `99`.
+    - `=ENTERO(5.8)` resultará en `5`.
+    
+- **Para números negativos:** 
+    
+    La función también redondea hacia abajo al entero más pequeño, que es un valor menor.
+    
+    - `=ENTERO(-5.8)` resultará en `-6`.
+    - `=ENTERO(-99.44)` resultará en `-100`.
+    
+
+#### Suma
+
+La función SUMA en Excel se utiliza para sumar un rango de celdas, celdas individuales o una combinación de ambos, devolviendo el total de estos números. Su uso es sencillo: se escribe `=SUMA()` y dentro de los paréntesis se especifican los números, referencias de celda (como A1) o rangos (como A2:A4) que se desean sumar, separados por comas.
+
+> Nota: El nombre de la función "SUMA" en inglés en Excel es `SUM`.
+
+#### Promedio
+
+La función PROMEDIO en Excel calcula la media aritmética de un conjunto de números o celdas, sumando todos los valores y dividiendo el resultado entre la cantidad de valores. Se utiliza para encontrar un valor representativo o típico dentro de un grupo de datos, por ejemplo, el promedio de ventas o calificaciones. 
+
+> Nota: La función `Promedio` se llama `AVERAGE` en inglés.
+
+Cómo funciona 
+
+1. **Sintaxis básica:** Se escribe `=PROMEDIO(número1; [número2]; ...)` en una celda.
+2. **Argumentos:**
+    - `número1`: Es el primer número o celda de la que se quiere calcular el promedio y es obligatorio.
+    - `[número2];` `...`: Son argumentos opcionales, pueden ser números, referencias de celda o rangos de celdas, hasta un máximo de 255.
+3. **Ignora valores no numéricos:** La función omite las celdas que contienen texto, valores lógicos o están vacías; sin embargo, considera las celdas con valor cero.
+
+Ejemplo de uso
+
+Si tienes los números 10, 20 y 30 en las celdas A1, A2 y A3 respectivamente, puedes calcular su promedio con la fórmula:  
+`=PROMEDIO(A1:A3)`. Esto dará como resultado 20.
+
+#### Maximo
 
 
 
+
+
+> Nota: 
 
 
 ### Datos
