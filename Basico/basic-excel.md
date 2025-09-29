@@ -895,11 +895,87 @@ Puntos importantes: 
     
 - **Valores Falsos y Vacíos**: 
     
-    `PROMEDIO.SI` ignora las celdas que contienen `VERDADERO` o `FALSO`. Las celdas vacías en `rango_promedio` también son omitidas.
+    `PROMEDIO.SI` Ignora las celdas que contienen `VERDADERO` o `FALSO`. Las celdas vacías en `rango_promedio` también son omitidas.
     
 - **Errores**: 
     
     Si no hay celdas que cumplan el criterio, la función devuelve un error `#¡DIV/0!` o `#VALOR!`.
+
+## Sesión 03: Fórmulas y funciones avanzadas
+
+Objetivos:
+
+- Trabajar con funciones de fecha, hora, texto y funciones lógicas.
+
+### Fechas
+
+En Excel, las fechas son valores especiales que Excel almacena como números de serie secuenciales, permitiendo realizar cálculos y comparaciones. Por defecto, el 1 de enero de 1900 es el número 1, y cada día posterior se incrementa. Puedes usarlas con la función `FECHA` para crear fechas a partir de año, mes y día, o con funciones como `HOY()` para obtener la fecha actual, facilitando la gestión de datos temporales. 
+
+> Nota: La función FECHA() en inglés es `DATE()`.
+
+Cómo funcionan las fechas en Excel
+
+- **Números de serie:** 
+    
+    Excel almacena las fechas como números. El 1 de enero de 1900 se representa como 1, y al día siguiente se le asigna el número 2. 
+    
+- **Cálculos:** 
+    
+    Al ser números, puedes realizar operaciones matemáticas. Si sumas 5 a una fecha, Excel te dará la fecha que está 5 días después. 
+    
+
+Funciones para fechas y horas
+
+- `=FECHA(año; mes; día)`: Crea una fecha a partir de sus componentes numéricos. 
+- `=HOY()`: Devuelve la fecha actual del sistema. 
+- `=AHORA()`: Devuelve la fecha y hora actuales del sistema. 
+- `=DIA(fecha)`: Extrae el día de una fecha dada. 
+- `=MES(fecha)`: Extrae el mes de una fecha dada.
+- `=AÑO(fecha)`: Extrae el año de una fecha dada.
+
+Para convertir un número a fecha, selecciona la celda con el dato, clic derecho, formato de celda. También usando `Ctrl + 1`👈.
+
+![Number to date](https://i.postimg.cc/jjjTSfXD/1-18-number-to-date.png)
+
+Resulta en `7/28/2016`
+
+Otra manera:
+
+![](https://i.postimg.cc/283nh9SB/1-18-number.png)
+
+##### Sumar fechas
+
+Para sumar números a una fecha en Excel, simplemente utiliza el operador de suma (+) o resta (-) seguido del número de días. Dado que Excel trata las fechas como números, esta operación aritmética simple es la forma más directa de sumar o restar días a una fecha. Si necesitas sumar años o meses, o días laborables, puedes usar las funciones `FECHA` o `DIAS.LAB`, o convertir las unidades a días y sumarlas.
+
+**Ejemplo:** `=A1+7` sumará 7 días a la fecha en A1.
+
+#### Dias.lab
+
+La función `DIAS.LAB` en Excel calcula el número de días laborables entre dos fechas, excluyendo fines de semana (sábados y domingos por defecto) y días festivos especificados en una lista opcional. La sintaxis es `DIAS.LAB(fecha_inicial, fecha_final, [vacaciones])`, donde los argumentos `fecha_inicial` y `fecha_final` son obligatorios, y `vacaciones` es un rango de fechas que se consideran no laborables. 
+
+> Nota: El nombre de la función "DIAS.LAB" en inglés es `NETWORKDAYS`.
+
+Cómo funciona
+
+1. **Fechas de inicio y fin:** Necesita dos fechas para calcular el período. 
+2. **Fines de semana:** Excluye automáticamente el sábado y el domingo como días no laborables. 
+3. **Días festivos:** Permite especificar una lista de fechas (por ejemplo, días festivos nacionales) que no se contarán como días laborables. 
+
+Sintaxis y argumentos 
+
+- `fecha_inicial` (obligatorio): La fecha de inicio del período.
+- `fecha_final` (obligatorio): La fecha de fin del período.
+- `[vacaciones]` (opcional): Un rango de celdas que contiene las fechas de los días festivos a excluir del cálculo.
+
+Ejemplo de uso
+
+Para calcular los días laborables entre el 1 de enero de 2024 y el 31 de enero de 2024, y excluyendo un día festivo el 15 de enero de 2024, podrías escribir en Excel:  
+`=DIAS.LAB("01/01/2024"; "31/01/2024"; A1)` Donde la celda `A1` contiene la fecha `15/01/2024`. 
+
+Diferencia con otras funciones
+
+- `DIAS.LAB` es ideal para la mayoría de las situaciones, ya que asume un fin de semana de sábado y domingo. 
+- Si necesitas definir días de fin de semana diferentes (por ejemplo, solo domingos, o lunes y martes), debes usar la función `DIAS.LAB.INTL`.
 
 
 
@@ -916,8 +992,10 @@ Puntos importantes: 
 
 
 
-1:00:00 min
-https://www.youtube.com/watch?v=JcE2UhFWZvc&t=10s
+2:03:04 min
+
+
+https://youtu.be/JcE2UhFWZvc?t=7309
 
 
 
