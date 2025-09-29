@@ -812,6 +812,9 @@ La función `CONTARA` en Excel se usa para contar el número de celdas que no
 
 La función CONTAR.SI en Excel (y Google Sheets) es una función estadística que cuenta el número de celdas dentro de un rango que cumplen un criterio específico que tú defines. Su sintaxis es `=CONTAR.SI(rango; criterio)` y es útil para realizar conteos condicionales, por ejemplo, para saber cuántas veces aparece una ciudad en una lista de clientes o cuántos productos de cierto tipo hay en un inventario. 
 
+> Nota: El nombre de la función CONTAR.SI en inglés en Excel es `COUNTIF`.  
+> En ocasiones Excel no acepta la separación por `;` sino, solo por comas `=COUNTIF(B4:B13, "san isidro")`.
+
 Cómo funciona:
 
 1. **Rango:** Es el conjunto de celdas en el que quieres buscar el criterio. 
@@ -830,6 +833,73 @@ Puntos clave:
 - **Distinguir mayúsculas/minúsculas:** La función no distingue entre mayúsculas y minúsculas para el texto. 
 - **Comillas:** Los criterios de texto, operadores lógicos y fechas deben ir entre comillas para ser interpretados correctamente. 
 
+#### Sumar.si
+
+La función `SUMAR.SI` en Excel suma los valores de un rango de celdas que cumplen con un criterio específico. Para usarla, debes indicar un rango (donde buscar el criterio), un criterio (la condición a cumplir) y un `rango_suma` (el rango que contiene los valores a sumar). Por ejemplo, puedes sumar las ventas solo de un vendedor específico o los valores mayores a un monto determinado. 
+
+> Nota: La función Sumar.si en inglés se llama `SUMIF`.
+
+Sintaxis de la función
+
+La función se escribe así: `SUMAR.SI(rango; criterio; [rango_suma])`. 
+
+- **Rango:** Es el rango de celdas donde se evaluará el criterio.
+- **Criterio:** Es la condición que se debe cumplir para que las celdas se incluyan en la suma. Puede ser un número, texto, una expresión o una referencia a otra celda.
+- **Rango_suma:** (Opcional) Es el rango de celdas que se sumarán. Si se omite este argumento, se sumarán las celdas del mismo `rango` que cumplan el criterio.
+
+Ejemplo práctico
+
+Supongamos que tienes una lista de ventas y quieres sumar las ventas de un vendedor en particular: 
+
+1. **Identifica los rangos:**
+    
+    - `Rango`: La columna con los nombres de los vendedores.
+    - `Criterio`: El nombre del vendedor específico que quieres sumar, por ejemplo, "Juan".
+    - `Rango_suma`: La columna con los montos de las ventas.
+    
+2. **Aplica la fórmula:** 
+    
+    En una celda, escribirías `=SUMAR.SI(A2:A10; "Juan"; B2:B10)` para sumar las ventas de "Juan" en el rango B2:B10, donde los nombres están en el rango A2:A10.
+    
+
+Diferencia con SUMAR.SI.CONJUNTO
+
+- **SUMAR.SI**: Suma valores basados en un único criterio. 
+- **SUMAR.SI.CONJUNTO:** Permite sumar valores que cumplen varios criterios diferentes.
+
+#### Promedio.si
+
+La función `PROMEDIO.SI` en Excel calcula la media aritmética de un conjunto de celdas que cumplen un solo criterio determinado. Su sintaxis es `PROMEDIO.SI(rango, criterio, [rango_promedio])`, donde rango es el conjunto de celdas que se va a evaluar, criterio es la condición que deben cumplir esas celdas, y rango_promedio es el rango real del cual se calculará el promedio. 
+
+> Nota: La función Promedio.si en inglés se llama `AVERAGEIF`.
+
+Cómo funciona: 
+
+1. **Rango**: Es el conjunto de celdas donde se buscará el criterio.
+2. **Criterio**: Es la condición que deben cumplir las celdas del rango. Puede ser un número, texto, una expresión (como `">10"`) o una referencia de celda.
+3. **Rango_promedio**: Es el rango que contiene los valores numéricos a promediar. Si se omite, Excel asume que se debe promediar el mismo rango.
+
+Ejemplo:
+
+Si tienes datos de ventas y quieres saber el promedio de ventas para la zona "Norte", la fórmula sería: `=PROMEDIO.SI(C1:C10, "Norte", D1:D10)` 
+
+- **C1:C10**: Es el rango que contiene las zonas de ventas.
+- **"Norte"**: Es el criterio que se busca.
+- **D1:D10**: Es el rango que contiene las ventas (los números a promediar).
+
+Puntos importantes: 
+
+- **Caracteres comodín**: 
+    
+    Puedes usar `?` (un carácter) y `*` (cualquier secuencia de caracteres) para buscar patrones.
+    
+- **Valores Falsos y Vacíos**: 
+    
+    `PROMEDIO.SI` ignora las celdas que contienen `VERDADERO` o `FALSO`. Las celdas vacías en `rango_promedio` también son omitidas.
+    
+- **Errores**: 
+    
+    Si no hay celdas que cumplan el criterio, la función devuelve un error `#¡DIV/0!` o `#VALOR!`.
 
 
 
