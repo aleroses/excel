@@ -1281,6 +1281,78 @@ Si en la celda B5 tienes el texto "ABC-12345" y quieres extraer solo los número
 - **5**: Es la posición inicial de los números (el carácter '1').
 - **5**: Es el número de caracteres que se van a extraer ('12345').
 
+### Encontrar
+
+La función `ENCONTRAR()` en Excel busca una cadena de texto (texto_buscado) dentro de otra cadena de texto (dentro_del_texto) y devuelve la posición inicial de la primera aparición de este texto, contando desde el primer carácter de la cadena principal. Esta función distingue entre mayúsculas y minúsculas y considera los espacios, devolviendo un número que indica la posición. 
+
+> Nota: La función `Encontrar()`en inglés es `FIND()`.
+
+Sintaxis
+
+```
+=ENCONTRAR(texto_buscado, dentro_del_texto, [núm_inicial])
+```
+
+- `texto_buscado`: El texto que quieres encontrar. 
+- `dentro_del_texto`: La cadena de texto donde buscarás el `texto_buscado`. 
+- `[núm_inicial]` (Opcional): El carácter a partir del cual quieres comenzar la búsqueda. Si se omite, la búsqueda inicia desde el primer carácter. 
+
+Ejemplo
+
+Si en la celda A1 tienes el texto "Archivo revisado" y en otra celda escribes `=ENCONTRAR("a", A1)`, la función devolverá `14`, porque la primera "a" se encuentra en la 14va posición. 
+
+Consideraciones importantes
+
+- **Distinción de mayúsculas y minúsculas**: 
+    
+    `ENCONTRAR` es sensible a mayúsculas y minúsculas. "a" no es igual a "A". Para una búsqueda que no distinga mayúsculas y minúsculas, usa la función `HALLAR()`. 
+    
+- **Carácter de inicio**: 
+    
+    Si `núm_inicial` no se especifica, la búsqueda comienza desde el primer carácter de `dentro_del_texto`. 
+    
+- **Uso con otras funciones**: 
+    
+    La función `ENCONTRAR` es muy útil para extraer información específica de un texto cuando se combina con otras funciones como `EXTRAE()` para obtener subcadenas. 
+    
+- **Errores**: 
+    
+    Si el `texto_buscado` no se encuentra, la función devuelve un error `#¡VALOR!`.
+
+### Hallar
+
+La función HALLAR en Excel encuentra la posición inicial de una cadena de texto o carácter dentro de otra cadena de texto. A diferencia de la función ENCONTRAR, HALLAR no distingue entre mayúsculas y minúsculas y permite el uso de comodines como "?" y "*". Devuelve un número que indica la posición del texto buscado o un error si no lo encuentra. 
+
+> Nota: La función `HALLAR()`en inglés es `SEARCH()`.
+
+Sintaxis:
+
+```
+HALLAR(texto_buscado, dentro_del_texto, [núm_inicial])
+```
+
+- **texto_buscado:** El texto que quieres encontrar. 
+- **dentro_del_texto:** La cadena de texto donde se realizará la búsqueda. 
+- **núm_inicial (opcional):** La posición desde donde se comenzará la búsqueda. Si se omite, la búsqueda empieza desde el primer carácter. 
+
+Ejemplo de uso:
+
+Si tienes el texto "Hola Mundo" en la celda A1 y quieres encontrar la posición de "mundo" (sin importar mayúsculas), usarías:
+
+```
+=HALLAR("mundo"; A1)
+```
+
+Esto devolverá `6`, ya que "mundo" empieza en la sexta posición. 
+
+Diferencias clave con ENCONTRAR: 
+
+- **Distinción de mayúsculas/minúsculas:** HALLAR no distingue, mientras que ENCONTRAR sí.
+- **Comodines:** HALLAR acepta comodines, a diferencia de ENCONTRAR.
+
+
+
+
 
 
 
