@@ -1711,10 +1711,10 @@ nombre de la funcion Dias.lab en ingles en excel
 
 
 
-2:03:04 min
+2:49:10 min
 
 
-https://youtu.be/JcE2UhFWZvc?t=7309
+https://youtu.be/JcE2UhFWZvc?t=10150
 
 
 
