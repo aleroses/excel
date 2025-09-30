@@ -1582,7 +1582,7 @@ Funciones clave de la visualización de ventanas:
     
 - **Cambiar ventana:** 
     
-    Selecciona esta opción en la pestaña "Vista" para ver una lista de todas las ventanas abiertas y cambiar a la que necesitas. 
+    Selecciona esta opción en la pestaña `Vista > Cambiar ventanas` para ver una lista de todas las ventanas abiertas y cambiar a la que necesitas. 
     
 - **Ocultar o mostrar ventanas:** 
     
@@ -1603,6 +1603,85 @@ Usos prácticos:
     
     Permite enfocarse en diferentes secciones de una hoja de cálculo grande sin perder el contexto, mejorando la eficiencia al trabajar con muchos datos.
 
+### Inmovilizar Paneles y Dividir Paneles
+
+En Excel, Inmovilizar Paneles congela filas y/o columnas para mantenerlas visibles al desplazarte por la hoja, ideal para mantener encabezados fijos.
+
+Por otro lado, Dividir Paneles crea límites en la ventana de la hoja de cálculo para que puedas ver diferentes secciones de la misma hoja simultáneamente y desplazarte por cada una de forma independiente. 
+
+Inmovilizar Paneles
+   
+- **Cómo se usa:**
+    
+    - **Para inmovilizar una fila o columna:** Selecciona la celda justo debajo de la fila o a la derecha de la columna que quieres inmovilizar, ve a la pestaña "Vista" y haz clic en "Inmovilizar paneles". 
+    - **Para inmovilizar la primera fila o columna:** Puedes seleccionar "Inmovilizar fila superior" o "Inmovilizar primera columna" directamente en el menú desplegable. 
+    - **Para desinmovilizar:** Selecciona "Descongelar paneles" en el mismo menú. 
+    
+
+Dividir Paneles
+ 
+- **Cómo se usa:**
+    
+    - Haz clic en la opción "Dividir" en la pestaña "Vista" para crear una línea que divida la pantalla. 
+    - Puedes arrastrar esta línea para cambiar el punto de división o hacer doble clic sobre ella para eliminarla. 
+    - Al desplazarte en un panel, los otros paneles no se verán afectados, pero el contenido sigue siendo el de la misma hoja de cálculo. 
+    
+
+### Ocultar y Mostrar Ventanas
+
+Ve a `Vista > Ocultar` o `Vista > Mostrar`
+
+### Formularios de datos
+
+Un formulario de datos en Excel es un cuadro de diálogo que facilita la introducción, edición, búsqueda y eliminación de filas de datos en un rango o tabla. Presenta los encabezados de columna como etiquetas en una vista vertical, lo que es útil para rangos con muchas columnas, ya que evita tener que desplazarse horizontalmente. Este formulario no requiere el uso de macros, se crea a partir de una tabla existente, y permite navegar entre registros, añadir nuevos, eliminar y buscar con comodines. 
+
+Cómo funciona y para qué sirve
+
+- **Vista simplificada:** 
+    
+    Muestra cada campo de una fila en un cuadro de texto en un cuadro de diálogo, en lugar de desplazarse por una hoja de cálculo ancha. 
+    
+- **Introducción de datos:** 
+    
+    Permite agregar nuevos registros de forma rápida y eficiente, rellenando los campos de texto. 
+    
+- **Gestión de datos:** 
+    
+    Facilita la búsqueda de registros específicos utilizando criterios de filtrado y caracteres comodín. 
+    
+- **Edición y eliminación:** 
+    
+    Permite modificar o eliminar los registros existentes dentro de la tabla. 
+    
+- **Validación:** 
+    
+    Aplica automáticamente las validaciones de datos configuradas en la tabla, previniendo la introducción de información no válida. 
+    
+
+Ventajas
+
+- **Productividad:** 
+    
+    Aumenta la eficiencia al simplificar la entrada de datos, reduciendo la necesidad de desplazarse por hojas de cálculo extensas. 
+    
+- **Minimización de errores:** 
+    
+    Al aplicar las validaciones de la tabla, ayuda a reducir los errores humanos en la entrada de datos. 
+    
+- **No requiere programación:** 
+    
+    No se necesitan macros ni programación para crear y utilizar el formulario de datos. 
+    
+
+Cómo agregar el comando "Formulario" (para versiones recientes de Excel)
+
+1. Ve a Archivo > Opciones. 
+2. Selecciona Personalizar cinta de opciones o Barra de herramientas de acceso rápido. 
+3. En el menú desplegable "Comandos disponibles", elige Todos los comandos. 
+4. Busca y selecciona el comando "Formulario". 
+5. Haz clic en Agregar y luego en Aceptar para añadirlo a tu barra de herramientas de acceso rápido. 
+
+Una vez agregado el comando, puedes seleccionar cualquier celda de tu tabla o rango de datos y hacer clic en el ícono de "Formulario" para abrir el cuadro de diálogo.
 
 
 
