@@ -1549,6 +1549,68 @@ La función `O()` es muy útil dentro de la función `SI()` para tomar decis
 
 ![[1.22.or.png]]
 
+## Sesión 04: Visualización de Ventanas - Administración de Datos
+
+Objetivos:
+
+- Visualización de ventanas.
+- Formulario de Datos
+- Ordenar y filtrar
+
+### Visualización de ventanas
+
+La Visualización de ventanas en Excel se refiere a las funciones y herramientas dentro de la pestaña "Vista" que permiten organizar, manipular y mostrar múltiples hojas o libros de Excel en la pantalla. Se puede abrir una nueva ventana para ver un mismo libro, organizar las ventanas horizontal o verticalmente, o usar la opción "Ver en paralelo" para comparar dos hojas con desplazamiento sincronizado. 
+
+Funciones clave de la visualización de ventanas:
+
+- **Abrir una nueva ventana:** 
+    
+    Presiona Ctrl + N o `Vista > Nueva Ventana` para crear una nueva ventana que es una copia del mismo libro, lo que te permite ver diferentes hojas o partes de una hoja grande simultáneamente. 
+    
+- **Organizar ventanas:** 
+    
+    En la pestaña `Vista > Organizar todo`, puedes elegir cómo organizar todas las ventanas de Excel que tengas abiertas:
+    
+    - **Horizontal o verticalmente:** Para ver las ventanas en secciones de la pantalla. 
+    - **Cascada:** Para apilar las ventanas una detrás de la otra. 
+    
+- **Ver en paralelo:** 
+    
+    Esta función muestra dos ventanas una al lado de la otra. 
+    
+    - **Desplazamiento Sincrónico:** Activa el desplazamiento simultáneo de las barras de desplazamiento en ambas ventanas, lo que facilita la comparación de datos entre filas, incluso en libros grandes. 
+    
+- **Cambiar ventana:** 
+    
+    Selecciona esta opción en la pestaña "Vista" para ver una lista de todas las ventanas abiertas y cambiar a la que necesitas. 
+    
+- **Ocultar o mostrar ventanas:** 
+    
+    Puedes ocultar una ventana sin cerrarla y luego volver a mostrarla desde la misma pestaña. 
+    
+
+Usos prácticos:
+
+- **Comparar datos:** 
+    
+    Ver en paralelo dos hojas de cálculo diferentes o distintas secciones del mismo libro es muy útil para comparar información. 
+    
+- **Trabajar con diferentes hojas:** 
+    
+    Si necesitas ver el contenido de varias hojas a la vez, puedes abrir ventanas distintas para cada una. 
+    
+- **Ver áreas de trabajo grandes:** 
+    
+    Permite enfocarse en diferentes secciones de una hoja de cálculo grande sin perder el contexto, mejorando la eficiencia al trabajar con muchos datos.
+
+
+
+
+
+
+
+
+
 
 
 
