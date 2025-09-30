@@ -1428,9 +1428,126 @@ Si los valores la columna **Forma de pago** coinciden o son iguales a la palabra
 
 ![[1.19.if.png]]
 
+![[1.19.if-result.png]]
 
+### Funciones anidadas
 
+Las funciones anidadas en Excel ocurren cuando el resultado de una función se utiliza como argumento dentro de otra función, permitiendo realizar cálculos complejos y tomar decisiones en un solo paso. Por ejemplo, puedes usar la función PROMEDIO dentro de una función SI para evaluar si el promedio de un conjunto de datos cumple una condición. 
 
+Cómo funcionan
+
+1. Una función principal toma los resultados de otra función (la función anidada) como uno de sus argumentos. 
+2. Esto crea una cadena de cálculos, donde cada función se ejecuta en secuencia. 
+3. La función anidada calcula un valor que la función principal necesita para continuar su propio cálculo o lógica. 
+
+Ejemplo práctico
+
+Imagina que quieres evaluar la nota de un estudiante y darle un estado: "Aprobar", "Reprobar" o "Pendiente" si falta una nota. 
+
+- **Función SI anidada:** 
+    
+    Podrías usar una función SI para verificar si hay notas vacías. Si la función O (que comprueba si hay algún espacio vacío) es VERDADERA, la celda quedará vacía.
+    
+- **Función PROMEDIO anidada:** 
+    
+    Si la función O es FALSA (es decir, no hay notas vacías), la función SI ejecutará la función PROMEDIO para calcular la nota final del estudiante.
+    
+
+Beneficios
+
+- **Realizar múltiples cálculos en una celda:** Permite ahorrar espacio y simplificar hojas de cálculo. 
+- **Tomar decisiones complejas:** Puedes evaluar múltiples condiciones y obtener resultados diferentes para cada caso. 
+- **Mayor flexibilidad:** Puedes crear fórmulas personalizadas para analizar y manipular datos de formas avanzadas. 
+
+Consideraciones
+
+- **Planificación:** 
+    
+    Es fundamental planificar cuidadosamente la lógica de la fórmula para evitar errores. 
+    
+- **Legibilidad:** 
+    
+    Las fórmulas anidadas pueden volverse complejas y difíciles de leer; puedes insertar saltos de línea en la barra de fórmulas (Alt+Intro) para mejorar la visualización. 
+    
+- **Límite de funciones:** 
+    
+    Excel permite anidar hasta 64 funciones SI, aunque es recomendable usar funciones como BUSCARV o IFS para evitar fórmulas demasiado complejas.
+
+Ejemplo de la clase:
+
+Si los valores de la columna Categoría son iguales a `1` aplica un `%`, y si no, evalúa nuevamente con otro `Si`. Si es igual a `2` aplica otro `%` y si no, nuevamente otro `Si` para el ultimo valor que es `3`. Terminamos la funcion multiplicandola por los datos de la columna Ventas.
+
+![[1.20.if-nested.png]]
+
+![[1.20.if-nested-result.png]]
+
+### Y
+
+La función `Y()` en Excel evalúa múltiples condiciones lógicas y devuelve `VERDADERO` solo si todas las condiciones se cumplen, y `FALSO` si alguna de ellas no se cumple. Sirve para verificar que un conjunto de criterios sean satisfechos simultáneamente, a menudo usada como argumento dentro de otras funciones, como `SI()`, para tomar decisiones basadas en la validación de varias pruebas. 
+
+> Nota: La función `Y()`en inglés es `AND()`.
+
+Cómo funciona: 
+
+- La función `Y()` toma varias pruebas lógicas como argumentos.
+- Evalúa cada prueba para determinar si es `VERDADERO` o `FALSO`.
+- Devuelve `VERDADERO` únicamente si todas las pruebas son `VERDADERO`.
+- Devuelve `FALSO` si al menos una de las pruebas es `FALSO`.
+
+Ejemplos de uso:
+
+- **Verificar un rango:** 
+    
+    `Y(A2>1, A2<100)` devuelve `VERDADERO` si el valor en la celda A2 es mayor que 1 y menor que 100. 
+    
+- **Con la función SI:** 
+    
+    Puedes usar `Y()` para crear condiciones complejas dentro de una función `SI()`. 
+    
+    - **Fórmula:** `=SI(Y(A2<A3,A2<100),A2,"El valor está fuera del rango")`
+    - **Explicación:** Muestra el valor de la celda A2 si este es menor que A3 y también es menor que 100. Si no se cumplen ambas condiciones, muestra el mensaje "El valor está fuera del rango". 
+    
+
+Ventajas:
+
+- Permite validar múltiples condiciones de forma simultánea. 
+- Se puede anidar con otras funciones como `SI()` y `O()` para crear lógicas más complejas. 
+- Simplifica la tarea de comprobar si un dato cumple varios requisitos a la vez.
+
+Ejemplo de la clase:
+
+En primera instancia usamos `SI` o `IF` luego `Y` o `AND` para verificar si las edades son mayores a 16 y si las estaturas son mayores a 1.5. Si esto es verdad muestra `Puede pasar` de lo contrario muestra `No puede pasar`.
+
+![[1.21.and.png]]
+
+### O
+
+La función `O()` en Excel es una función lógica que devuelve `VERDADERO` si al menos una de las condiciones o pruebas lógicas especificadas son verdaderas. Si todas las condiciones son falsas, la función devuelve `FALSO`. Su sintaxis es `=O(prueba_lógica1; [prueba_lógica2]; ...)`, y se utiliza comúnmente para evaluar múltiples criterios y para combinar con la función `SI()`. 
+
+> Nota: La función `O()`en inglés es `OR()`.
+
+Cómo funciona:
+
+- **Sintaxis:** `=O(condición1, condición2, ...)`. 
+- **Argumentos:** Admite hasta 255 pruebas lógicas. 
+- **Resultado:**
+    - Devuelve `VERDADERO` si una o más condiciones se cumplen. 
+    - Devuelve `FALSO` únicamente si todas las condiciones son falsas. 
+
+Ejemplo de uso:
+
+Si tienes datos en la celda A2 y quieres saber si es mayor que 1 o menor que 100, usarías la fórmula:  
+`=O(A2>1, A2<100)` Esta fórmula devolverá `VERDADERO` si A2 es, por ejemplo, 50, porque es mayor que 1 y también menor que 100. Pero si A2 fuera 150, devolvería `FALSO` porque ninguna de las dos condiciones se cumple. 
+
+Combinación con la función SI:
+
+La función `O()` es muy útil dentro de la función `SI()` para tomar decisiones basadas en múltiples criterios. 
+
+- **Ejemplo:** `=SI(O(A2>1, A2<100), A3, "El valor está fuera del rango")`
+    - Si A2 es mayor que 1 o menor que 100, la fórmula mostrará el valor de A3.
+    - De lo contrario, mostrará el texto "El valor está fuera del rango".
+
+![[1.22.or.png]]
 
 
 
