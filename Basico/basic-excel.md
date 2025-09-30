@@ -1426,9 +1426,9 @@ Ejemplo de la clase:
 
 Si los valores la columna **Forma de pago** coinciden o son iguales a la palabra **Efectivo** aplicar un Descuento del `15%`, de lo contrario será `0` descuento. Adicional a la fórmula `SI` se debe multiplicar por los datos de la columna **Total**.
 
-![[1.19.if.png]]
+![If](https://i.postimg.cc/WbXWkpgs/1-19-if.png)
 
-![[1.19.if-result.png]]
+![If result](https://i.postimg.cc/MTSbLgV0/1-19-if-result.png)
 
 ### Funciones anidadas
 
@@ -1477,9 +1477,9 @@ Ejemplo de la clase:
 
 Si los valores de la columna Categoría son iguales a `1` aplica un `%`, y si no, evalúa nuevamente con otro `Si`. Si es igual a `2` aplica otro `%` y si no, nuevamente otro `Si` para el ultimo valor que es `3`. Terminamos la funcion multiplicandola por los datos de la columna Ventas.
 
-![[1.20.if-nested.png]]
+![If nested](https://i.postimg.cc/8PpDG5TS/1-20-if-nested.png)
 
-![[1.20.if-nested-result.png]]
+![If nested result](https://i.postimg.cc/y6P4LHcv/1-20-if-nested-result.png)
 
 ### Y
 
@@ -1518,7 +1518,7 @@ Ejemplo de la clase:
 
 En primera instancia usamos `SI` o `IF` luego `Y` o `AND` para verificar si las edades son mayores a 16 y si las estaturas son mayores a 1.5. Si esto es verdad muestra `Puede pasar` de lo contrario muestra `No puede pasar`.
 
-![[1.21.and.png]]
+![And](https://i.postimg.cc/yxNffwCt/1.21.and.png)
 
 ### O
 
@@ -1547,13 +1547,13 @@ La función `O()` es muy útil dentro de la función `SI()` para tomar decis
     - Si A2 es mayor que 1 o menor que 100, la fórmula mostrará el valor de A3.
     - De lo contrario, mostrará el texto "El valor está fuera del rango".
 
-![[1.22.or.png]]
+![Or](https://i.postimg.cc/cLGRCV56/1-22-or.png)
 
 ## Sesión 04: Visualización de Ventanas - Administración de Datos
 
 Objetivos:
 
-- Visualización de ventanas.
+- Visualización de ventanas
 - Formulario de Datos
 - Ordenar y filtrar
 
@@ -1675,14 +1675,165 @@ Ventajas
 
 Cómo agregar el comando "Formulario" (para versiones recientes de Excel)
 
-1. Ve a Archivo > Opciones. 
-2. Selecciona Personalizar cinta de opciones o Barra de herramientas de acceso rápido. 
-3. En el menú desplegable "Comandos disponibles", elige Todos los comandos. 
-4. Busca y selecciona el comando "Formulario". 
-5. Haz clic en Agregar y luego en Aceptar para añadirlo a tu barra de herramientas de acceso rápido. 
+1. Ve a `Archivo > Opciones`. 
+2. Selecciona`Personalizar cinta de opciones` o `Barra de herramientas de acceso rápido`. 
+3. En el menú desplegable "Comandos disponibles", elige `Todos los comandos`. 
+4. Busca y selecciona el comando `"Formulario"`. 
+5. Haz clic en `Agregar` y luego en `Aceptar` para añadirlo a tu barra de herramientas de acceso rápido. 
 
 Una vez agregado el comando, puedes seleccionar cualquier celda de tu tabla o rango de datos y hacer clic en el ícono de "Formulario" para abrir el cuadro de diálogo.
 
+![Options](https://i.postimg.cc/JhNRNdmw/1-23-options.png)
+
+![New group](https://i.postimg.cc/0yTtSDpL/1-23-new-group.png)
+
+![Add](https://i.postimg.cc/PqbM8cfp/1-23-add.png)
+
+![Result](https://i.postimg.cc/y6R0JtLf/1-23-result.png)
+
+También lo puedes hacer desde la `Barra de acceso rápido > Mas comandos`
+
+![More commands](https://i.postimg.cc/ydnVbVjX/1-23-more-commands.png)
+
+![Add quick access toolbar](https://i.postimg.cc/J01QRQjv/1.23-add-quick-access-toolbar.png)
+
+![Result form](https://i.postimg.cc/vZRc9ZNZ/1-23-result-form.png)
+
+Ejemplo de uso:
+
+Selecciona cualquier celda dentro de la tabla y pícale al icono de Formulario recién agregado.
+
+![Example](https://i.postimg.cc/q7Twm0gP/1-23-example.png)
+
+Aquí puedes Buscar el siguiente registro o Añadir uno nuevo. Para crear uno nuevo puedes arrastrar la barra lateral hasta el último registro, esto hará aparecer los recuadros vacíos para añadir los datos, o también puedes darle al botón nuevo.
+
+### Ordenar
+
+Ordenar en Excel significa reestructurar sistemáticamente la información de un rango o tabla para que se muestre en un orden específico, ya sea alfabético, numérico, por fecha o por otro criterio. Excel organiza los datos automáticamente para facilitar su lectura, análisis y búsqueda rápida.
+
+¿Cómo ordenar datos en Excel?
+
+1. **Selecciona los datos:** 
+    
+    Haz clic en una celda dentro de la columna que deseas ordenar o selecciona el rango completo de datos. 
+    
+2. **Utiliza las herramientas de la pestaña "Inicio":**
+    
+    - En la sección "Ordenar y filtrar", busca los botones "Ordenar de A a Z" (ascendente) o "Ordenar de Z a A" (descendente).
+
+![A-Z](https://i.postimg.cc/DwT56sjK/1-24-A-Z.png)
+
+3. **Considera la opción "Ordenar personalizado":**
+    
+    - Si necesitas ordenar por múltiples criterios (por ejemplo, primero por departamento y luego por apellido), haz clic en "Ordenar". 
+    - Aquí podrás definir cada nivel de ordenación, eligiendo la columna, el orden (ascendente/descendente) y el tipo de orden (por valor de celda, color, etc.). 
+    
+
+![Sort](https://i.postimg.cc/vTGf9L8v/1-24-sort.png)
+
+Consejo Importante: 
+
+- Cuando Excel te pregunte si deseas "Ampliar la selección", acepta para que Excel ordene todas las filas relacionadas y no solo la columna aislada, manteniendo la integridad de los datos.
+
+### Filtrar
+
+En Excel, "filtrar" es la acción de mostrar solo los datos que cumplen con ciertos criterios específicos, ocultando o dejando de mostrar el resto de la información de una hoja de cálculo. Permite ver patrones, aislar información relevante o preparar datos para un análisis más sencillo sin eliminar el contenido de forma permanente. 
+
+¿Cómo funciona?
+
+1. **Selecciona los datos:** 
+    
+    Elige la tabla o rango de celdas que deseas filtrar. 
+    
+2. **Aplica un filtro:** 
+    
+    En la pestaña "Datos", haz clic en "Filtro" para habilitar los menús desplegables en cada encabezado de columna. 
+    
+3. **Establece los criterios:** 
+    
+    Haz clic en la flecha del encabezado de la columna que te interesa y elige el o los valores que quieres que se muestren. Puedes buscar, activar o desactivar casillas, o usar criterios avanzados para definir condiciones específicas. 
+    
+4. **Observa los resultados:** 
+    
+    Excel ocultará automáticamente las filas que no coincidan con los criterios seleccionados, mostrando solo las que sí cumplen con tu filtro. 
+    
+
+![Filter](https://i.postimg.cc/FzpQTmb5/1-24-filter.png)
+
+![Clear Filter](https://i.postimg.cc/DwVcxsz6/1-24-clear-filter.png)
+
+Tipos de filtros y funciones:
+
+- **Filtro automático:** 
+    
+    El método básico descrito anteriormente, accesible desde el menú de "Datos". 
+    
+- **Función FILTRAR (dynamic array function):** 
+    
+    Una función más avanzada (disponible en Excel 365 y 2021) que devuelve una matriz dinámica de resultados. Su sintaxis es `=FILTRAR(matriz_datos; incluir; [si_vacio])`, donde `incluir` define la condición para devolver los datos. 
+    
+- **Filtros de color:** 
+    
+    Permiten filtrar filas según el color de fondo o de fuente de las celdas. 
+    
+- **Segmentaciones de datos:** 
+    
+    Botones visuales (disponibles con Microsoft 365) que facilitan el filtrado rápido y el estado de los datos, especialmente en tablas y tablas dinámicas. 
+    
+
+### Filtro personalizado
+
+Un filtro personalizado en Excel es una función avanzada dentro del Autofiltro que te permite definir tus propias reglas de filtrado, más allá de las opciones predeterminadas de la lista desplegable. Con él, puedes aplicar hasta dos criterios simultáneamente usando operadores lógicos como "Y" o "O", y usar comodines como "?" para un solo carácter o "*" para múltiples caracteres, para obtener un control más detallado y preciso sobre los datos que deseas mostrar.
+
+¿Para qué sirve? 
+
+- **Filtrar datos complejos:** 
+    
+    Permite definir criterios específicos para rangos de números, textos o fechas que serían difíciles o imposibles de lograr con las opciones estándar.
+    
+- **Establecer múltiples condiciones:** 
+    
+    Puedes combinar dos criterios con un operador lógico:
+    
+    - **Y:** Ambas condiciones deben cumplirse para que se muestren los datos.
+    - **O:** Solo una de las condiciones debe cumplirse para que los datos sean visibles.
+    
+- **Usar comodines:** 
+    
+    Excel reconoce los siguientes comodines para filtrar texto:
+    
+    - **? (signo de interrogación):** Representa un solo carácter. Por ejemplo, "c?sa" filtrará "casa" y "cosa".
+    - **\* (asterisco):** Representa cualquier serie de caracteres. Por ejemplo, "manzana" filtrará "manzana" y "pomelo con manzana".
+    
+
+¿Cómo se usa?
+
+1. **Aplica Autofiltro:** 
+    
+    Selecciona los datos y haz clic en el botón "Filtro" en la pestaña "Datos" para activar el Autofiltro. 
+    
+2. **Accede al cuadro de diálogo:** 
+    
+    Haz clic en la flecha del encabezado de la columna que deseas filtrar y selecciona la opción "Filtro de número" (o "Filtro de texto"/"Filtro de fecha", según el tipo de dato). 
+    
+3. **Define tu criterio:** 
+    
+    Se abrirá el cuadro de diálogo de Filtro personalizado. 
+    
+    - **Selecciona la regla:** En la primera lista desplegable, elige la condición (por ejemplo, "es mayor que", "contiene", "comienza con"). 
+    - **Introduce el dato:** En la casilla de la derecha, escribe el texto, número o fecha para el criterio. 
+    - **Añade un segundo criterio (opcional):** Usa el segundo selector para elegir un nuevo operador lógico y criterio de filtrado para añadir una segunda condición. 
+    
+4. **Aplica el filtro:** 
+    
+    Haz clic en "Aceptar" para ver los datos que cumplen con tus reglas. 
+    
+
+![Custom filter](https://i.postimg.cc/Gp6GqTdG/1-24-custom-filter.png)
+
+![](https://i.postimg.cc/CK9rkK2R/1.24.custom-autofilter.png)
+
+En resumen, el filtro personalizado en Excel es una herramienta potente que va más allá de la selección de valores en una lista, permitiéndote crear reglas de filtrado sofisticadas para analizar tus datos de manera más precisa.
 
 
 
