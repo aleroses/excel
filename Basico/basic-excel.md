@@ -1235,8 +1235,51 @@ Ejemplos:
 
 ### Izquierda
 
+La función `IZQUIERDA()` en Excel sirve para extraer un número específico de caracteres desde el principio (lado izquierdo) de una cadena de texto. Su sintaxis es `IZQUIERDA(texto, [núm_de_caracteres])`, donde `texto` es la cadena de la cual quieres extraer y `núm_de_caracteres` es la cantidad de letras que deseas obtener, contando de izquierda a derecha. 
+
+> Nota: La función `Izquierda()`en inglés es `LEFT()`.
+
+Ejemplo de uso
+
+Si en la celda A1 tienes la palabra "Excel Rock" y en la celda B1 ingresas `=IZQUIERDA(A1; 5)`, el resultado será "Excel" porque estás pidiendo los primeros cinco caracteres de la cadena de texto en A1.
+
 ### Derecha
 
+La función `DERECHA()` en Excel extrae un número específico de caracteres desde el lado derecho de una cadena de texto. Su sintaxis es `=DERECHA(texto, [núm_de_caracteres])`, donde "texto" es la celda que contiene el texto y "[núm_de_caracteres]" es la cantidad de caracteres a extraer del final. Esta función es útil para obtener información específica, como el último dígito de un número de teléfono o un código de estado.
+
+> Nota: La función `DERECHA()`en inglés es `RIGHT()`.
+
+Ejemplo práctico
+
+Si en la celda A1 tienes el texto "Quito 2025" y en la celda B1 quieres extraer los últimos 4 dígitos, usarías la fórmula: `=DERECHA(A1;4)`. El resultado en la celda B1 sería "2025".
+
+### Extrae
+
+La función `EXTRAE()` en Excel sirve para extraer un número específico de caracteres de una cadena de texto, comenzando desde una posición inicial determinada y hasta una cantidad de caracteres especificada. Su sintaxis es `EXTRAE(texto; posición_inicial; núm_de_caracteres)` y es útil para dividir textos, analizar códigos, o limpiar datos importados.
+
+> Nota: La función `EXTRAE()`en inglés es `MID()`.
+
+Sintaxis de la función `EXTRAE()`
+
+```
+EXTRAE(texto; posición_inicial; núm_de_caracteres)
+```
+
+- `texto`: Es la cadena de texto de la que quieres extraer los caracteres. 
+- `posición_inicial`: Es la posición del primer carácter que deseas extraer, contado desde el principio de la cadena. 
+- `núm_de_caracteres`: Es la cantidad de caracteres que quieres extraer a partir de la `posición_inicial`. 
+
+Ejemplo práctico
+
+Si en la celda B5 tienes el texto "ABC-12345" y quieres extraer solo los números (12345), podrías usar la siguiente fórmula en otra celda (por ejemplo, C5): 
+
+```
+=EXTRAE(B5; 5; 5)
+```
+
+- **B5**: Es la celda que contiene el texto "ABC-12345".
+- **5**: Es la posición inicial de los números (el carácter '1').
+- **5**: Es el número de caracteres que se van a extraer ('12345').
 
 
 
@@ -1244,7 +1287,7 @@ Ejemplos:
 
 
 
-que es la funcion Dias.lab en excel
+que es la función Dias.lab en excel
 
 nombre de la funcion Dias.lab en ingles en excel
 
