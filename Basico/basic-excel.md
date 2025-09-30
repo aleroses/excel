@@ -1350,6 +1350,88 @@ Diferencias clave con ENCONTRAR: 
 - **Distinción de mayúsculas/minúsculas:** HALLAR no distingue, mientras que ENCONTRAR sí.
 - **Comodines:** HALLAR acepta comodines, a diferencia de ENCONTRAR.
 
+### Funciones lógicas
+
+Las funciones lógicas en Excel son fórmulas que realizan una prueba para determinar si una condición es verdadera o falsa, y devuelven un valor específico según ese resultado. Las más comunes son `SI`, que ejecuta un valor si una condición es verdadera y otro si es falsa; `Y`, que devuelve verdadero solo si todas sus condiciones son verdaderas; y `O`, que devuelve verdadero si alguna de sus condiciones es verdadera. 
+
+Cómo funcionan las funciones lógicas
+
+Estas funciones actúan sobre una expresión lógica (una comparación que puede resultar en VERDADERO o FALSO) para devolver información sobre los valores. 
+
+- **Prueba lógica:** 
+    
+    Es cualquier valor o expresión que se puede evaluar como VERDADERO o FALSO. Por ejemplo, `A10=100` es una prueba lógica que se evalúa como VERDADERO si el valor de la celda A10 es igual a 100, o FALSO en caso contrario. 
+    
+- **Operadores lógicos:** 
+    
+    Se usan para construir las pruebas lógicas, como:
+    
+    - Igual a (=)
+    - Mayor que (>)
+    - Menor que (<)
+    - Mayor o igual que (>=)
+    - Menor o igual que (<=)
+    - Diferente de (<>) 
+    
+
+Funciones lógicas principales
+
+- **SI (IF):** Evalúa una condición y devuelve un valor si la condición es VERDADERA y otro valor si es FALSA.
+    - **Sintaxis:** `SI(prueba_lógica; valor_si_verdadero; valor_si_falso)`.
+    - **Ejemplo:** `=SI(A2>10; "Mayor"; "Menor o igual")` devolverá "Mayor" si A2 es mayor que 10, y "Menor o igual" en caso contrario. 
+
+- **Y (AND):** 
+    
+    Determina si todas las condiciones de una prueba son verdaderas. 
+    
+    - **Sintaxis:** `Y(prueba_lógica1; [prueba_lógica2]; ...)`. 
+    - **Ejemplo:** `=Y(A2>1; A2<100)` es VERDADERO si A2 es mayor que 1 Y menor que 100, de lo contrario, es FALSO. 
+    
+- **O (OR):** 
+    
+    Devuelve VERDADERO si alguna de las condiciones es verdadera. 
+    
+    - **Sintaxis:** `O(lógico1; [lógico2]; ...)`. 
+    - **Ejemplo:** `=O(A2<10; A2>50)` es VERDADERO si A2 es menor que 10 O si es mayor que 50.
+
+### Si
+
+La función SI() en Excel se usa para realizar una comparación lógica entre un valor y lo que esperas, devolviendo un resultado si la comparación es Verdadera y otro resultado si es Falsa. Su sintaxis es `=SI(prueba_lógica, valor_si_verdadero, valor_si_falso)`, donde la "prueba_lógica" es la condición que se evalúa, el "valor_si_verdadero" es lo que se devuelve si la condición se cumple, y el "valor_si_falso" es lo que se devuelve si no se cumple. 
+
+> Nota: La función `SI()`en inglés es `IF()`.
+
+¿Cómo funciona?
+
+1. **Prueba lógica**: 
+    
+    Se establece una condición que se verifica, por ejemplo, si el valor en la celda C2 es igual a "Sí". 
+    
+2. **Valor si verdadero**: 
+    
+    Si la prueba lógica es verdadera, la función devuelve un resultado específico, como 1 o "Aprobado". 
+    
+3. **Valor si falso**: 
+    
+    Si la prueba lógica es falsa, la función devuelve un resultado diferente, como 2 o "No aprobado". 
+    
+
+Ejemplo práctico
+
+Si tienes un total de ventas en la celda B2, puedes usar la siguiente fórmula para saber si se cumple una cuota: `=SI(B2>1000, "Cumplido", "Pendiente")` 
+
+- Si la celda B2 contiene un valor mayor a 1000, la fórmula mostrará "Cumplido".
+- Si el valor en B2 es 1000 o menor, la fórmula mostrará "Pendiente".
+
+Ejemplo de la clase:
+
+Si los valores la columna **Forma de pago** coinciden o son iguales a la palabra **Efectivo** aplicar un Descuento del `15%`, de lo contrario será `0` descuento. Adicional a la fórmula `SI` se debe multiplicar por los datos de la columna **Total**.
+
+![[1.19.if.png]]
+
+
+
+
+
 
 
 
