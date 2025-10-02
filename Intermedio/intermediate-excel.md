@@ -1,5 +1,7 @@
 # Excel intermedio
 
+[Curso Excel 2019 - Intermedio](https://youtu.be/rdRtDDV0-rg)
+
 ## Sesión 01: Formato Personalizado
 
 Objetivos:
@@ -110,40 +112,36 @@ La estructura general de un formato personalizado en Excel es:
 
 #### Formatos con positivos y negativos
 
-- **#,##0_);(#,##0)**  
+- `#,##0_);(#,##0)`  👈
     Positivos normales, negativos entre paréntesis.  
     Ej: 1234 → `1,234 `; -1234 → `(1,234)`.
     
-- **`#,##0_);[Red](#,##0)`**  
+- `#,##0_);[Red](#,##0)`  
     Igual que el anterior, pero los negativos en **rojo**.
     
-- **#,##0.00_);(#,##0.00)**  
+- `#,##0.00_);(#,##0.00)`  👈
     Igual, pero con 2 decimales.
     
-- **#,##0.00_);[Red](https://chatgpt.com/g/g-p-68d8b7a690d48191800d1a9e7d2d5d1f-excel/c/68dec77a-7f04-8331-a714-22b9f19e03ab#,##0.00)**  
+- `#,##0.00_);[Red](#,##0.00)`  
     Negativos en rojo, con 2 decimales.
     
 
----
+#### Formatos monetarios (con $)
 
-### 💲 **Formatos monetarios (con $)**
-
-- **$#,##0_);($#,##0)**  
+- `$#,##0_);($#,##0)`  👈
     Positivos con `$`, negativos entre paréntesis con `$`.
     
-- **$#,##0_);[Red](https://chatgpt.com/g/g-p-68d8b7a690d48191800d1a9e7d2d5d1f-excel/c/$#,##0)**  
+- `$#,##0_);[Red]($#,##0)`  
     Igual, pero negativos en rojo.
     
-- **$#,##0.00_);($#,##0.00)**  
+- `$#,##0.00_);($#,##0.00)`  👈
     Con 2 decimales.
     
-- **$#,##0.00_);[Red](https://chatgpt.com/g/g-p-68d8b7a690d48191800d1a9e7d2d5d1f-excel/c/$#,##0.00)**  
+- `$#,##0.00_);[Red]($#,##0.00)`  
     Con 2 decimales y negativos en rojo.
     
 
----
-
-### 📊 **Porcentajes y notación científica**
+#### Porcentajes y notación científica
 
 - **0%** → Muestra el número como porcentaje sin decimales.  
     Ej: 0.25 → `25%`.
@@ -157,9 +155,7 @@ La estructura general de un formato personalizado en Excel es:
 - **##0.0E+0** → Notación científica con 1 decimal.
     
 
----
-
-### ➗ **Fracciones**
+#### Fracciones
 
 - **# ?/?** → Muestra como fracción simple.  
     Ej: 0.5 → `1/2`; 2.25 → `2 1/4`.
@@ -168,9 +164,7 @@ La estructura general de un formato personalizado en Excel es:
     Ej: 2.125 → `2 1/8`.
     
 
----
-
-### 📅 **Fechas**
+#### Fechas
 
 - **m/d/yyyy** → 3/14/2025.
     
@@ -181,9 +175,7 @@ La estructura general de un formato personalizado en Excel es:
 - **mmm-yy** → Mar-25.
     
 
----
-
-### ⏰ **Horas**
+#### Horas
 
 - **h:mm AM/PM** → 1:30 PM.
     
@@ -201,25 +193,23 @@ La estructura general de un formato personalizado en Excel es:
     
 - **@** → Para texto (lo que escribas se muestra tal cual).
     
-- **[h]:mm:ss** → Suma horas totales sin reiniciar en 24h. Ej: 27:45:00.
+- `[h]:mm:ss` → Suma horas totales sin reiniciar en 24h. Ej: 27:45:00.
     
 
----
-
-### 💵 **Formatos más complejos (alineación y símbolos)**
+#### Formatos más complejos (alineación y símbolos)
 
 Estos usan `_` (espacio), `*` (relleno), y localización:
 
-- ___($_ #,##0_);_($_ (#,##0);_($* "-"_);_(@_)**  
+- `_($* #,##0_);_($* (#,##0);_($* "-"_);_(@_)`  
     → Positivos con $, negativos entre paréntesis, ceros como "-", y texto alineado.
     
-- ___(_ #,##0_);_(_ (#,##0);_(* "-"_);_(@_)**  
+- `_(* #,##0_);_(* (#,##0);_(* "-"_);_(@_)`*  
     → Igual pero sin símbolo $.
     
-- ___($_ #,##0.00_);_($_ (#,##0.00);_($* "-"??_);_(@_)**  
+- `_($* #,##0.00_);_($* (#,##0.00);_($* "-"??_);_(@_)`  
     → Como los anteriores pero con 2 decimales.
     
-- **_-[$S/.-es-PE] * #,##0.00_ ;...**  
+- `_-[$S/.-es-PE] * #,##0.00_ ;_-[$S/.-es-PE] * -#,##0.00 ;_-[$S/.-es-PE] * "-"??_ ;_-@_ `
     → Lo mismo, pero con **símbolo de moneda en Soles (S/.)** y localización española (Perú).
     
 
@@ -250,9 +240,10 @@ Estos usan `_` (espacio), `*` (relleno), y localización:
 - `[h]` hace que las horas se acumulen.
     
 
----
 
-¿Quieres que te arme una **tabla práctica** con ejemplos (valor → cómo se vería con cada formato) para que lo veas más claro en la práctica?
+
+
+
 
 
 
