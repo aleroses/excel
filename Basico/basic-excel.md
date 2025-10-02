@@ -2051,6 +2051,20 @@ Beneficios de la pestaña Vista: 
     
     La vista "Diseño de página" muestra cómo se verá la hoja de cálculo al imprimirse, incluyendo márgenes y saltos de página.
 
+#### Vistas de libro / Diseño de página
+
+La vista Diseño de página en Excel es una herramienta que permite previsualizar cómo se verá una hoja de cálculo al imprimirla, mostrando los márgenes, encabezados, pies de página y saltos de página, de manera que se pueden realizar ajustes en la apariencia para lograr una impresión perfecta antes de imprimirla.
+
+![Page layout](https://i.postimg.cc/pVKBrJGT/1-26-page-layout.png)
+
+![Edit](https://i.postimg.cc/Y9sTSfbz/1-26-edit.png)
+
+
+
+
+
+
+
 
 
 
