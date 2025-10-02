@@ -1835,14 +1835,221 @@ Un filtro personalizado en Excel es una función avanzada dentro del Autofiltro
 
 En resumen, el filtro personalizado en Excel es una herramienta potente que va más allá de la selección de valores en una lista, permitiéndote crear reglas de filtrado sofisticadas para analizar tus datos de manera más precisa.
 
+## Sesión 05: Gráficos
 
+Objetivos:
 
+- Personalizar un gráfico
+- Tipos de gráficos
 
+Un gráfico en Excel es una representación visual de datos numéricos que se utiliza para facilitar la comprensión, comparación y análisis de la información de manera rápida y sencilla. Al transformar filas y columnas de datos en imágenes, los gráficos ayudan a identificar tendencias, relaciones y patrones, haciendo que grandes volúmenes de información sean más accesibles para el público. 
 
+Para qué sirven los gráficos
 
+- **Visualizar datos:** 
+    
+    Convierten datos numéricos en formatos gráficos como barras, líneas o pasteles para que sean más fáciles de entender. 
+    
+- **Facilitar la comprensión:** 
+    
+    Hacen que la información sea más digerible, permitiendo que las audiencias capten y retengan datos complejos de forma más efectiva. 
+    
+- **Comparar datos:** 
+    
+    Son herramientas muy útiles para comparar diferentes conjuntos de datos o la evolución de una misma serie a lo largo del tiempo. 
+    
+- **Acelerar el análisis:** 
+    
+    Permiten un análisis más rápido de la información, lo cual es especialmente útil al manejar grandes cantidades de datos. 
+    
 
+Cómo se crean
 
+1. **Seleccionar los datos:** 
+    
+    Primero, debes elegir la información que quieres representar en tu hoja de cálculo. 
+    
+2. **Insertar el gráfico:** 
+    
+    Luego, ve a la pestaña `"Insertar"` en la barra de herramientas de Excel y selecciona el tipo de gráfico que prefieras (como columnas, líneas o circular). 
+    
+3. **Personalizar el gráfico:** 
+    
+    Excel también te permite personalizar la apariencia, incluyendo colores, títulos, leyendas y el estilo general del gráfico. 
+    
 
+Tipos comunes de gráficos en Excel
+
+- **Gráfico de columnas/barras:** Ideales para comparar valores entre diferentes elementos. 
+- **Gráfico de líneas:** Muestran tendencias y la evolución de los datos a lo largo del tiempo. 
+- **Gráfico circular (de torta):** Usado para mostrar la proporción que cada parte representa del total. 
+- **Gráfico de área:** Se enfoca en la magnitud de los cambios y la relación de las partes con el todo a lo largo del tiempo.
+
+![Chart](https://i.postimg.cc/L5V3h4fv/1-25-chart.png)
+
+![chart](https://i.postimg.cc/TwB3mnjv/1-25-chart-result.png)
+
+### Cambiar tipo de Gráfico
+
+Si deseamos cambiar de gráfico este botón permite cambiarlo.
+
+![](https://i.postimg.cc/fRFz1xFC/1-25-chart-design.png)
+
+También podremos ver la opción `Mover Gráfico` que nos permite moverlo a una nueva hoja.
+
+Al igual que `Diseño rápido` que nos permite añadir más detalles al diseño.
+
+### Formato del área del gráfico
+
+El Formato del área del gráfico en Excel se refiere a la personalización estética y de diseño del espacio que contiene todos los elementos de un gráfico, como el fondo, los bordes y el tamaño, y se accede seleccionando el área del gráfico o utilizando el panel de tareas "Formato" o la cinta de opciones contextual. 
+
+¿Qué es el área del gráfico? 
+
+- Es el contenedor rectangular que abarca el gráfico completo, incluyendo el área de trazado, las etiquetas, los títulos y cualquier otro elemento gráfico.
+
+Cómo acceder y aplicar el formato:
+
+1. **Seleccionar el área del gráfico:** 
+    
+    Haz clic en el gráfico y luego haz clic en los bordes del área del gráfico para seleccionarla. 
+    
+2. **Utilizar la cinta de herramientas:** 
+    
+    Una vez seleccionada, aparecerán las pestañas "Diseño de gráfico" y "Formato", donde puedes aplicar estilos de formato rápidos o colores de tema. 
+    
+3. **Usar el panel de tareas Formato:** 
+    
+    Haz clic derecho en el área del gráfico y selecciona "Dar formato al área del gráfico" para abrir un panel con opciones detalladas. 👈
+    
+
+Qué puedes formatear:
+
+- **Relleno:** Cambiar el color de fondo a un color sólido, degradado, textura o incluso una imagen desde un archivo. 
+- **Bordes:** Modificar el grosor, estilo y color del borde que rodea el gráfico. 
+- **Estilos predefinidos:** Aplicar un conjunto de formatos visuales ya creados con un solo clic. 
+- **Tamaño y posición:** Ajustar el tamaño del área del gráfico para que se adapte a tus necesidades.
+
+### Mini gráficos
+
+![Minigraficos](https://i.postimg.cc/0QDPsH3j/1-25-sparklines.png)
+
+Para borrarlos, seleccionalos y ve a `Diseño > Borrar` o `Sparkline > Clear` 
+
+### Gráficos combinados
+
+![Combo](https://i.postimg.cc/SsF7RJZd/1-25-combo.png)
+
+## Sesión 06: Imprimir
+
+Objetivos:
+
+- Vista Preliminar
+- Configuración de página
+
+`Archivo > Imprimir`
+
+Imprimir en Excel es el proceso de enviar el contenido de una hoja de cálculo a una impresora para obtenerlo en un soporte físico, como el papel. Para hacerlo, debes ir a `Archivo > Imprimir` o usar el atajo de teclado Ctrl + P. Desde ahí, puedes seleccionar qué imprimir (toda la hoja, una parte o un rango seleccionado), elegir la impresora y ajustar otras opciones como el número de copias o la configuración de la página, para luego dar la orden de impresión. 
+
+Pasos para imprimir en Excel:
+
+1. **Abre tu archivo**: de Excel y selecciona la hoja o el contenido que deseas imprimir. 
+2. **Accede al cuadro de diálogo Imprimir**: de dos maneras: 
+    - Ve a la pestaña Archivo en la esquina superior izquierda y selecciona Imprimir en el menú vertical. 
+    - Usa la combinación de teclas Ctrl + P (o Cmd + P en Mac). 
+3. **Configura las opciones de impresión**: en la vista de "Backstage": 
+    - **Impresora:** Elige la impresora a la que quieres enviar el documento. 
+    - **Configuración:** Define si quieres imprimir la hoja actual, todo el libro o solo el rango seleccionado. 
+    - **Copias:** Especifica la cantidad de copias que necesitas. 
+4. **Revisa la vista previa:** A la derecha de la pantalla, verás cómo quedará el documento impreso en el papel, esto te ayuda a organizar tu contenido en páginas. 
+5. **Haz clic en el botón Imprimir**: para enviar el documento a la impresora. 
+
+Consejos adicionales:
+
+- **Ajustar la impresión:** 
+    
+    Si el contenido ocupa más de una hoja, puedes ajustarlo para que entre en una sola. Para ello, ve a la pestaña Vista y haz clic en Ver salto de página. Luego, puedes arrastrar las líneas de puntos para ajustar el contenido a la hoja. 
+    
+- **Imprimir títulos:** 
+    
+    Puedes hacer que los encabezados de filas o columnas se repitan en cada página usando la opción Imprimir títulos en la pestaña Diseño de página.
+
+### Diseño de página
+
+La Disposición de página en Excel es la pestaña o ficha que permite configurar cómo se verá y cómo se imprimirá una hoja de cálculo, controlando aspectos como márgenes, orientación, tamaño del papel, saltos de página, encabezados y pies de página, y el área de impresión. También incluye opciones para aplicar temas, ajustar la escala y organizar objetos como imágenes y formas. 
+
+Componentes principales de la pestaña Disposición de página:
+
+- **Temas:** 
+    
+    Permiten aplicar un estilo consistente de colores, fuentes y efectos a toda la hoja o libro de trabajo. 
+    
+- **Configurar página**
+    
+    - **Márgenes:** Espacio en blanco alrededor de los datos en la página impresa. 
+    - **Orientación:** Define si la página será vertical u horizontal. 
+    - **Tamaño:** Elige el tamaño del papel (A4, carta, etc.). 
+    - **Área de impresión:** Especifica el rango de celdas que se desea imprimir.  Para quitar el area de impresión seleccionar **Borrar área de impresión**.
+    - **Saltos de página** Divide el contenido de la hoja en varias páginas al imprimir. 
+    - **Fondo:** Añade una imagen de fondo a la hoja, la cual no se imprimirá. 
+    - **Imprimir títulos:** Repite filas o columnas específicas en cada página impresa, ideal para tablas largas. 
+
+![Rows to repeat](https://i.postimg.cc/7YgZJf0Y/1-26-rows-to-repeat.png)
+    
+- **Escala para ajustar:** 
+    
+    Permite ajustar el contenido para que quepa en un número determinado de páginas, ya sea ajustando la escala de impresión a un porcentaje o a una página. Es lo encuentras en la sección `Configurar página ▪ > Ajuste de escala`.
+
+![Page setup](https://i.postimg.cc/6pj4j83C/1-26-page-setup.png)
+
+    
+- **Opciones de la hoja:** 
+    
+    Se pueden configurar elementos como la impresión de las líneas de división de celdas y los encabezados de filas y columnas. 
+    
+- **Organizar:** 
+    
+    Permite manipular objetos insertados en la hoja, como imágenes o formas, ofreciendo opciones como traer adelante, enviar atrás, alinear, agrupar o rotar.
+
+### Vista
+
+La pestaña "Vista" en Excel permite controlar cómo se visualiza una hoja de cálculo, ofreciendo opciones para cambiar el formato de visualización (normal, de página, etc.), ajustar el nivel de zoom, ocultar o mostrar elementos como las líneas de cuadrícula o encabezados, y congelar paneles para que las filas y columnas importantes permanezcan visibles al desplazarse por el documento. También permite crear "Vistas de hoja" personalizadas para que los usuarios puedan trabajar en un mismo archivo sin interferir con las configuraciones de otros, como filtros o el ordenamiento. 
+
+Funciones clave de la pestaña Vista: 
+
+- **Vistas de libro:** 
+    
+    Permite cambiar entre vistas como "Normal", "Diseño de página", o "Vista previa de salto de página", que modifican la forma en que se muestra la hoja de trabajo.
+    
+- **Vistas de hoja (en libros compartidos):** 
+    
+    Ofrece la capacidad de guardar vistas personalizadas (por ejemplo, con filtros y ordenamientos específicos) para trabajar en el mismo archivo que otros usuarios, sin que los cambios de uno afecten al de los demás. 
+    
+- **Mostrar/Ocultar:** 
+    
+    Permite mostrar u ocultar elementos como las líneas de cuadrícula, los encabezados (letras y números de filas y columnas) y las reglas. 
+    
+- **Zoom:** 
+    
+    Permite acercar o alejar la hoja de cálculo para verla más grande o más pequeña, con opciones para el porcentaje de zoom y la configuración del área de trabajo.
+    
+- **Ventana:** 
+    
+    Incluye funciones para congelar o inmovilizar paneles, dividir la pantalla o cambiar entre diferentes archivos abiertos. 
+    
+
+Beneficios de la pestaña Vista: 
+
+- **Mejora la usabilidad:** 
+    
+    Facilita el trabajo con hojas de cálculo muy largas o complejas al permitir ocultar elementos innecesarios o congelar paneles importantes.
+    
+- **Optimiza el trabajo colaborativo:** 
+    
+    Las vistas de hoja son especialmente útiles en entornos colaborativos, ya que permiten a cada usuario crear su propia configuración sin afectar a los demás.
+    
+- **Facilita la preparación para impresión:** 
+    
+    La vista "Diseño de página" muestra cómo se verá la hoja de cálculo al imprimirse, incluyendo márgenes y saltos de página.
 
 
 
@@ -1862,14 +2069,10 @@ nombre de la funcion Dias.lab en ingles en excel
 
 
 
-2:49:10 min
+3:01:10 min
 
 
-https://youtu.be/JcE2UhFWZvc?t=10150
-
-
-
-
+https://youtu.be/JcE2UhFWZvc?t=10917
 
 
 
