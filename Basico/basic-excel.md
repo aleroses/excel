@@ -2059,43 +2059,6 @@ La vista Diseño de página en Excel es una herramienta que permite previsualiz
 
 ![Edit](https://i.postimg.cc/Y9sTSfbz/1-26-edit.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-que es la función Dias.lab en excel
-
-nombre de la funcion Dias.lab en ingles en excel
-
-
-> Nota: 
-
-
-### Datos
-
-
-
-3:01:10 min
-
-
-https://youtu.be/JcE2UhFWZvc?t=10917
-
-
-
-
-
-
-
-
-
 ## Atajos de teclado Excel en Ingles
 
 Estos son algunos de los atajos de teclado más útiles y comunes en Excel:
@@ -2165,8 +2128,7 @@ Estos atajos pueden mejorar significativamente tu productividad en Excel, permit
 
 ## Colors
 
-#090b10
+`#090b10`
+`#4f46e5`
 
-#4f46e5
-
-alt 126 ~
+`alt 126 ~`
