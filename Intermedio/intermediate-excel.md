@@ -240,6 +240,185 @@ Estos usan `_` (espacio), `*` (relleno), y localización:
 - `[h]` hace que las horas se acumulen.
     
 
+Otros
+
+```
+####.#
+#.000
+0.#
+#.00
+#.0#
+
+???.???
+
+# ???/???
+
+#,##0.00
+"S/."*   #,##0.00
+"S/."* - #,##0.00
+"S/."* . #,##0.00
+"S/."** #,##0.00
+```
+
+#### 🔢 **Decimales opcionales**
+
+- **####.#**
+    
+    - `#` = dígito si existe (no muestra ceros a la izquierda o al final).
+        
+    - Ejemplos:
+        
+        - `123.45` → `123.5`
+            
+        - `0.4` → `.4` (nota que no obliga al “0” antes del punto, si fuera 1.4 si aparece el 1).
+            
+- **#.000**
+    
+    - Siempre **3 decimales exactos**.
+        
+    - Ej: `12.3` → `12.300`
+        
+- **0.#**
+    
+    - El `0` obliga a que haya al menos un dígito antes del punto.
+        
+    - El `#` hace opcional el decimal.
+        
+    - Ej:
+        
+        - `5` → `5`
+            
+        - `5.2` → `5.2`
+            
+        - `5.23` → `5.2`
+            
+- **#.00**
+    
+    - Muestra como mínimo **2 decimales** si hay parte decimal, pero no muestra nada si no lo hay.
+        
+    - Ej:
+        
+        - `12.3` → `12.30`
+            
+        - `12` → `12`
+            
+- **#.0#**
+    
+    - Muestra al menos **1 decimal**, y el segundo decimal es opcional.
+        
+    - Ej:
+        
+        - `12.3` → `12.3`
+            
+        - `12.34` → `12.34`
+            
+        - `12` → `12.0`
+            
+
+#### 📐 **Alineación de decimales**
+
+- **???.???**
+    
+    - `?` reserva espacio para dígitos (aunque no existan), lo que permite **alinear los decimales en columna**.
+        
+    - Ej:
+        
+        - `1.2` → `1.2  👈 2 espacios`
+            
+        - `123.45` → `123.45 👈 1 espacio`
+            
+        - `7` → `7.   👈 3 espacios`
+            
+    - Esto es muy usado en reportes contables para que todos los números queden bien alineados.
+	    
+	    ```
+	     28.568|
+	    256.52 |
+	     14.7  |
+	    ```
+
+#### ➗ **Fracciones**
+
+- **# ???/???**
+    
+    - Muestra número como fracción con hasta **3 dígitos en numerador y denominador**.
+        
+    - Ej:
+        
+        - `2.125` → `2 1/8`
+            
+        - `0.5` → `1/2`
+	    
+	    ```
+	    2  1/8  |
+	       1/2  |
+	    ```
+
+#### 💵 **Moneda y relleno con símbolo**
+
+- `#,##0.00`
+    
+    - Ya lo vimos: separador de miles + 2 decimales.
+        
+- `"S/."* #,##0.00_*`
+    
+    - `"texto"` muestra literal lo que escribas (aquí `S/.`).
+        
+    - `*` repite el carácter siguiente para rellenar hasta el ancho de la celda.
+        
+    - En este caso, **rellena con espacios** (`" "`).
+        
+    - Ejemplo:
+        
+        - Si la celda es ancha → `S/. 1,234.50`
+            
+- `"S/."* - #,##0.00_*`
+    
+    - Rellena con **guiones** `-` hasta alinear.
+        
+    - Ej:
+        
+        - `S/.---- 1,234.50`
+            
+- `"S/."* . #,##0.00_*`
+    
+    - Rellena con **puntos** `.`.
+        
+    - Ej:
+        
+        - `S/..... 1,234.50`
+            
+- `"S/."** #,##0.00`
+    
+    - Doble `*` hace que el símbolo se repita de manera continua hasta rellenar.
+        
+    - Ej:
+        
+        - `S/.***** 1,234.50` (dependiendo del ancho de la celda).
+            
+
+---
+
+👉 Resumen de las nuevas reglas que aparecieron aquí:
+
+- `#` → muestra dígito si existe, pero no obliga.
+    
+- `0` → obliga a mostrar dígito, aunque sea 0.
+    
+- `?` → reserva espacio, útil para alinear.
+    
+- `"texto"` → escribe texto literal.
+    
+- `*` → rellena con el carácter que sigue.
+    
+- `**` → rellena repitiendo más intensamente el carácter.
+    
+
+
+
+
+
+
 
 
 
