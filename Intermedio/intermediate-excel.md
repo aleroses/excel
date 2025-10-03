@@ -606,7 +606,15 @@ Menor a 0 → rojo, entre 0 y 100 → azul, mayor a 100 → verde.
 - No afecta la lógica de la celda, solo cómo se ve.
     
 
+#### Moneda
 
+En Excel, "Moneda en Formato Personalizado" se refiere a la opción de crear un formato numérico específico para valores monetarios, donde tú defines el símbolo, la posición de los decimales y los separadores, o utilizas formatos ya existentes como el de "Moneda" o "Contabilidad" que se ajustan a la configuración regional para mostrar valores con un signo monetario y decimales. 
+
+¿Qué es el formato de moneda en Excel?
+
+- Es un formato que se aplica a los números para que se muestren con un símbolo de moneda (como $, €, ¥) y para definir el número de posiciones decimales y el uso de separadores de miles. 
+- Existe el formato predefinido de "Moneda", que alinea el símbolo junto al primer dígito de la celda. 
+- También está el formato de "Contabilidad", que alinea el símbolo de moneda con las posiciones decimales en una columna. 
 
 
 
