@@ -634,9 +634,7 @@ donde:
 - (b) = exponente (cuántas veces mover la coma decimal).
     
 
----
-
-## 📌 Cómo funciona en Excel
+##### Cómo funciona en Excel
 
 En Excel, el formato de notación científica se escribe con **E** (de "exponent"):
 
@@ -645,16 +643,12 @@ En Excel, el formato de notación científica se escribe con **E** (de "exponent
 - **##0.0E+0** → un decimal en la mantisa, exponente con un dígito.
     
 
----
-
-## 📌 Ejemplo práctico
+##### Ejemplo práctico
 
 Número: **300000**
 
-1. Representación científica:  
-    [  
-    300000 = 3.00 \times 10^5  
-    ]
+1. Representación científica:    
+    $`300000 = 3.00 \times 10^5`$
     
 2. En Excel con formato **0.00E+00** →  
     `3.00E+05`
@@ -666,9 +660,7 @@ Número: **300000**
     `300.0E+3` (porque ese formato obliga a que la parte antes de la E tenga al menos 3 dígitos).
     
 
----
-
-## 📌 Ejemplos con diferentes valores
+##### Ejemplos con diferentes valores
 
 - **0.00045** con formato **0.00E+00** → `4.50E-04`
     
@@ -677,9 +669,7 @@ Número: **300000**
 - **12.3** con formato **0.00E+00** → `1.23E+01`
     
 
----
-
-## 📌 Personalización
+##### Personalización
 
 - Los **ceros después del punto** controlan cuántos decimales aparecen en la mantisa.
     
@@ -696,18 +686,7 @@ Número: **300000**
     - `0.00E+00` → exponente con 2 dígitos (ej: E+05).
         
 
----
 
-✅ Resumiendo:
-
-- Excel siempre mostrará el número como ( a \times 10^b ).
-    
-- Tú controlas **cuántos decimales en la mantisa** y **cuántos dígitos en el exponente** con el formato.
-    
-
----
-
-¿Quieres que te prepare una **tabla comparativa con varios números** (grandes, pequeños y normales) aplicando distintos formatos científicos para que veas la diferencia?
 
 
 
