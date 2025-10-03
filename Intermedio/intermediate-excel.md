@@ -414,11 +414,11 @@ Otros
 - `**` → rellena repitiendo más intensamente el carácter.
     
 
-### Colores
+#### Colores
 
 En **Excel** los **formatos personalizados** permiten no solo controlar **cómo se ven los números**, sino también **el color** con el que se muestran (pero ojo: solo afecta la visualización, no el valor).
 
-#### Colores disponibles en formatos personalizados
+##### Colores disponibles en formatos personalizados
 
 Excel tiene un conjunto limitado de colores predefinidos que se pueden usar directamente en los códigos de formato:
 
@@ -444,7 +444,7 @@ También puedes usar colores indexados por número, que corresponden a la paleta
 - **[Color1]** a **[Color56]** (estos dependen de la paleta activa del archivo).
     
 
-#### Cómo aplicarlos
+##### Cómo aplicarlos
 
 Los colores se colocan **entre corchetes `[]` al inicio de cada sección** del formato.
 
@@ -504,7 +504,7 @@ Ejemplos:
 - El color depende de la paleta de tu Excel.
     
 
-#### Tips útiles
+##### Tips útiles
 
 - Puedes mezclar colores con símbolos y formatos.
     
@@ -529,6 +529,86 @@ Ejemplos:
     
 - Texto → magenta
     
+
+#### Colores + Condicionales
+
+Esto es distinto al **Formato condicional** de Excel (el que está en la pestaña **Inicio → Formato condicional**).  
+En **formato personalizado**, las condiciones **solo cambian la apariencia en la celda**, no permiten acciones más complejas.
+
+##### Sintaxis general con condiciones en formatos personalizados
+
+```
+[color][condición]formato;[color][condición]formato;formato_si_no_cumple
+```
+
+- **[condición]** → Comparación numérica: `<`, `<=`, `>`, `>=`, `=`, `<>`.
+    
+- **[color]** → Uno de los colores permitidos (`Red`, `Green`, `Blue`, etc.).
+    
+- Puedes poner hasta **2 condiciones**, luego una sección “por defecto”.
+    
+
+##### Ejemplos prácticos
+
+1. Números menores a 100 en rojo, mayores o iguales en azul
+
+```
+[Red][<100]#,##0;[Blue][>=100]#,##0
+```
+
+- 50 → se muestra rojo
+    
+- 150 → se muestra azul
+    
+
+2. Tres rangos (ejemplo semáforo)
+
+Menor a 0 → rojo, entre 0 y 100 → azul, mayor a 100 → verde.
+
+```
+[Red][<0]#,##0;[Blue][<=100]#,##0;[Green]#,##0
+```
+
+- -10 → rojo
+    
+- 50 → azul
+    
+- 200 → verde
+    
+
+3. Positivos en verde, negativos en rojo, ceros en amarillo
+
+```
+[>0][Green]#,##0;[<0][Red]#,##0;[Yellow]0
+```
+
+4. Mostrar texto con color fijo, pero números con condiciones
+
+```
+[<0][Red]#,##0;[Blue]#,##0;0;[Magenta]@
+```
+
+- Negativos → rojos
+    
+- Positivos o ceros → azules
+    
+- Texto → magenta
+    
+
+##### 📌 Limitaciones importantes
+
+- Solo se pueden usar **dos condiciones explícitas**, más una tercera sección como “catch-all”.
+    
+- Si intentas poner más de 2 condiciones, Excel ignora las demás.
+    
+- No se puede usar fórmulas complejas (ej: `[<A1]` no es válido, deben ser valores fijos).
+    
+- No afecta la lógica de la celda, solo cómo se ve.
+    
+
+
+
+
 
 
 
