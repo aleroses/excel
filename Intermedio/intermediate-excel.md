@@ -444,9 +444,7 @@ También puedes usar colores indexados por número, que corresponden a la paleta
 - **[Color1]** a **[Color56]** (estos dependen de la paleta activa del archivo).
     
 
----
-
-## 📌 **Cómo aplicarlos**
+#### Cómo aplicarlos
 
 Los colores se colocan **entre corchetes `[]` al inicio de cada sección** del formato.
 
@@ -470,8 +468,6 @@ Ejemplos:
 - -1234 → `(1,234)` en rojo
     
 
----
-
 2. **Positivos verdes, negativos rojos, ceros azules**
     
 
@@ -486,8 +482,6 @@ Ejemplos:
 - 0 → azul
     
 
----
-
 3. **Texto en magenta**
     
 
@@ -500,8 +494,6 @@ Ejemplos:
 - Si escribes texto, aparece en magenta.
     
 
----
-
 4. **Usando índices de color**
     
 
@@ -512,20 +504,16 @@ Ejemplos:
 - El color depende de la paleta de tu Excel.
     
 
----
-
-## 📌 **Tips útiles**
+#### Tips útiles
 
 - Puedes mezclar colores con símbolos y formatos.
     
 - No puedes usar valores hexadecimales (#FF0000, etc.), solo nombres o índices.
     
-- Si usas nombres en español como `[Rojo]`, Excel no lo reconoce: siempre deben ser en **inglés**.
+- Si usas nombres en español como `[Rojo]`, Excel no lo reconoce: siempre deben ser en **inglés** si usas Excel en Inglés.
     
 - En números con 2 secciones, el color del primero aplica a positivos y ceros.
     
-
----
 
 👉 Ejemplo completo con las 4 secciones:
 
