@@ -414,6 +414,134 @@ Otros
 - `**` → rellena repitiendo más intensamente el carácter.
     
 
+### Colores
+
+En **Excel** los **formatos personalizados** permiten no solo controlar **cómo se ven los números**, sino también **el color** con el que se muestran (pero ojo: solo afecta la visualización, no el valor).
+
+#### Colores disponibles en formatos personalizados
+
+Excel tiene un conjunto limitado de colores predefinidos que se pueden usar directamente en los códigos de formato:
+
+- **[Black]**
+    
+- **[Blue]**
+    
+- **[Cyan]**
+    
+- **[Green]**
+    
+- **[Magenta]**
+    
+- **[Red]**
+    
+- **[White]**
+    
+- **[Yellow]**
+    
+
+También puedes usar colores indexados por número, que corresponden a la paleta de Excel:
+
+- **[Color1]** a **[Color56]** (estos dependen de la paleta activa del archivo).
+    
+
+---
+
+## 📌 **Cómo aplicarlos**
+
+Los colores se colocan **entre corchetes `[]` al inicio de cada sección** del formato.
+
+Recuerda que la estructura del formato es:
+
+```
+[Positivo];[Negativo];[Cero];[Texto]
+```
+
+Ejemplos:
+
+1. **Negativos en rojo**
+    
+
+```
+#,##0;[Red](#,##0)
+```
+
+- 1234 → `1,234`
+    
+- -1234 → `(1,234)` en rojo
+    
+
+---
+
+2. **Positivos verdes, negativos rojos, ceros azules**
+    
+
+```
+[Green]#,##0;[Red]-#,##0;[Blue]0
+```
+
+- 1200 → verde
+    
+- -800 → rojo
+    
+- 0 → azul
+    
+
+---
+
+3. **Texto en magenta**
+    
+
+```
+#,##0;[Red]-#,##0;0;[Magenta]@
+```
+
+- Si escribes un número se ve normal (verde/rojo según el caso).
+    
+- Si escribes texto, aparece en magenta.
+    
+
+---
+
+4. **Usando índices de color**
+    
+
+```
+[Color10]#,##0;[Color3]-#,##0;[Color5]0
+```
+
+- El color depende de la paleta de tu Excel.
+    
+
+---
+
+## 📌 **Tips útiles**
+
+- Puedes mezclar colores con símbolos y formatos.
+    
+- No puedes usar valores hexadecimales (#FF0000, etc.), solo nombres o índices.
+    
+- Si usas nombres en español como `[Rojo]`, Excel no lo reconoce: siempre deben ser en **inglés**.
+    
+- En números con 2 secciones, el color del primero aplica a positivos y ceros.
+    
+
+---
+
+👉 Ejemplo completo con las 4 secciones:
+
+```
+[Blue]#,##0;[Red]-#,##0;[Green]0;[Magenta]@
+```
+
+- Positivos → azul
+    
+- Negativos → rojo
+    
+- Ceros → verde
+    
+- Texto → magenta
+    
+
 
 
 
