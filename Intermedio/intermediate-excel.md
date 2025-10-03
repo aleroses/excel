@@ -579,13 +579,13 @@ Menor a 0 → rojo, entre 0 y 100 → azul, mayor a 100 → verde.
 3. Positivos en verde, negativos en rojo, ceros en amarillo
 
 ```
-[>0][Green]#,##0;[<0][Red]#,##0;[Yellow]0
+[Green][>0]#,##0;[Red][<0]#,##0;[Yellow]0
 ```
 
 4. Mostrar texto con color fijo, pero números con condiciones
 
 ```
-[<0][Red]#,##0;[Blue]#,##0;0;[Magenta]@
+[Red][<0]#,##0;[Blue]#,##0;0;[Magenta]@
 ```
 
 - Negativos → rojos
