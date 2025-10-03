@@ -616,11 +616,98 @@ En Excel, "Moneda en Formato Personalizado" se refiere a la opción de crear un
 - Existe el formato predefinido de "Moneda", que alinea el símbolo junto al primer dígito de la celda. 
 - También está el formato de "Contabilidad", que alinea el símbolo de moneda con las posiciones decimales en una columna. 
 
+![Currency](https://i.postimg.cc/BvML683S/1-2-currency.png)
 
+![Quick access to currency](https://i.postimg.cc/Dw71w3Gd/1-2-quick-access-to-currency.png)
 
+#### Notación científica
 
+Es una forma de escribir números muy grandes o muy pequeños usando **potencias de 10**.  
+La idea es expresar un número como:
 
+$`n = a \times 10^b`$
 
+donde:
+
+- (a) = mantisa (un número entre 1 y 10, con decimales)
+    
+- (b) = exponente (cuántas veces mover la coma decimal).
+    
+
+---
+
+## 📌 Cómo funciona en Excel
+
+En Excel, el formato de notación científica se escribe con **E** (de "exponent"):
+
+- **0.00E+00** → dos decimales en la mantisa, exponente con dos dígitos.
+    
+- **##0.0E+0** → un decimal en la mantisa, exponente con un dígito.
+    
+
+---
+
+## 📌 Ejemplo práctico
+
+Número: **300000**
+
+1. Representación científica:  
+    [  
+    300000 = 3.00 \times 10^5  
+    ]
+    
+2. En Excel con formato **0.00E+00** →  
+    `3.00E+05`
+    
+3. Si usas **0.0E+00** →  
+    `3.0E+05`
+    
+4. Si usas **##0.0E+0** →  
+    `300.0E+3` (porque ese formato obliga a que la parte antes de la E tenga al menos 3 dígitos).
+    
+
+---
+
+## 📌 Ejemplos con diferentes valores
+
+- **0.00045** con formato **0.00E+00** → `4.50E-04`
+    
+- **987654321** con formato **0.00E+00** → `9.88E+08`
+    
+- **12.3** con formato **0.00E+00** → `1.23E+01`
+    
+
+---
+
+## 📌 Personalización
+
+- Los **ceros después del punto** controlan cuántos decimales aparecen en la mantisa.
+    
+    - `0E+00` → sin decimales.
+        
+    - `0.00E+00` → dos decimales.
+        
+    - `0.000E+00` → tres decimales.
+        
+- Los ceros después de la **E** controlan cuántos dígitos muestra el exponente.
+    
+    - `0.00E+0` → exponente con 1 dígito.
+        
+    - `0.00E+00` → exponente con 2 dígitos (ej: E+05).
+        
+
+---
+
+✅ Resumiendo:
+
+- Excel siempre mostrará el número como ( a \times 10^b ).
+    
+- Tú controlas **cuántos decimales en la mantisa** y **cuántos dígitos en el exponente** con el formato.
+    
+
+---
+
+¿Quieres que te prepare una **tabla comparativa con varios números** (grandes, pequeños y normales) aplicando distintos formatos científicos para que veas la diferencia?
 
 
 
@@ -637,3 +724,7 @@ En Excel, "Moneda en Formato Personalizado" se refiere a la opción de crear un
 `#4f46e5`
 
 `alt 126 ~`
+
+## Math
+
+This sentence uses $\` and \`$ delimiters to show math inline: $`\sqrt{3x-1}+(1+x)^2`$
